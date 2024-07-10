@@ -43,6 +43,7 @@ additional_links:
   url: https://blog.naver.com/jaeseokk_
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#   When add icon, "fab" + html ex) fab + "fa-brands fa-blogger"
 #   url: Link url (eg. https://google.com)
 
 # Google Analytics and Tag Manager
