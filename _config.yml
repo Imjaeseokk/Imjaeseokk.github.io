@@ -14,7 +14,7 @@ email: kakaokokoa9971@gmail.com
 phone: Your phone number 
 # phone_title: Phone (Phone title override)
 website: Your website (eg. https://google.com)
-website_title: Web (Website title override)
+# website_title: Web (Website title override)
 
 # Dark Mode (true/false/never)
 darkmode: false
