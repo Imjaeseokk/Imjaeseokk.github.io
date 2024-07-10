@@ -36,10 +36,10 @@ googlescholar_username: D847cGsAAAAJ
 # Additional icon links
 additional_links:
 - title: Link name
-  icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+  icon: fab fa-twitter
   url: Link url (eg. https://google.com)
 - title: blog
-  icon: fa-brands fa-blogger
+  icon: fab fa-brands fa-blogger
   url: https://blog.naver.com/jaeseokk_
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
