@@ -2,6 +2,7 @@
 repository: Imjaeseokk/Imjaeseokk.github.io
 # Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
 # favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+title: Nice to Meet You
 
 # Content configuration version
 version: 2
