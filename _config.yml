@@ -2,14 +2,13 @@
 repository: Imjaeseokk/Imjaeseokk.github.io
 # Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
 # favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
-title: Nice to Meet You
 
 # Content configuration version
 version: 2
 
 # Personal info
 name: Jaeseokk Heo
-title: Your job title
+title: Nice to Meet You
 email: kakaokokoa9971@gmail.com 
 # email_title: Email (Email title override)
 phone: Your phone number 
