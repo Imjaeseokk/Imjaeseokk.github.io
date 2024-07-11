@@ -4,49 +4,53 @@
 
 @import 'modern-resume-theme';
 
-// body {
-//   font-family: Arial, sans-serif;
-// }
 
-// header {
-//   background-color: #333;
-//   color: white;
-//   padding: 10px 0;
-//   position: fixed;
-//   width: 100%;
-//   top: 0;
-//   z-index: 1000;
-// }
+/* Custom styles */
+body {
+  font-family: Arial, sans-serif;
+}
 
-// .top-nav {
-//   display: flex;
-//   justify-content: center;
-// }
+header {
+  background-color: #fff; /* White background */
+  color: black; /* Black text */
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #e7e7e7; /* Optional: Adds a subtle border at the bottom */
+}
 
-// .top-nav ul {
-//   list-style-type: none;
-//   margin: 0;
-//   padding: 0;
-//   display: flex;
-//   gap: 20px;
-// }
+.top-nav {
+  display: flex;
+  justify-content: center;
+}
 
-// .top-nav ul li {
-//   display: inline;
-// }
+.top-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
 
-// .top-nav ul li a {
-//   color: white;
-//   text-decoration: none;
-//   font-size: 16px;
-//   padding: 10px 20px;
-// }
+.top-nav ul li {
+  display: inline;
+}
 
-// .top-nav ul li a:hover {
-//   background-color: #575757;
-//   border-radius: 5px;
-// }
+.top-nav ul li a {
+  color: black; /* Black text */
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Same as original site */
+}
 
-// .container.header-container {
-//   padding-top: 60px; /* Adjust to ensure content is not hidden behind the fixed nav */
-// }
+.top-nav ul li a:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+  border-radius: 5px;
+}
+
+.container.header-container {
+  padding-top: 60px; /* Adjust to ensure content is not hidden behind the fixed nav */
+}
