@@ -93,7 +93,7 @@ content:
       - layout: right
         title: KEPCO
         sub_title: Job title
-        caption: Date Range (eg. November 2016 - present)
+        caption: July 2017 - August 2017
         link: Link to company (optional)
         quote: >
           Short description of the company (optional)
@@ -102,7 +102,7 @@ content:
       - layout: right
         title: Samsung Electronics
         sub_title: Job title
-        caption: Date Range (eg. November 2016 - present)
+        caption: April 2018 - present
         link: Link to company (optional)
         quote: >
           Short description of the company (optional)
