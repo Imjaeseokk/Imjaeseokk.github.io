@@ -1,3 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <nav class="top-nav">
+      <ul>
+        {% for item in site.navigation %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+
+
 <div class="container header-container">
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 header-left">
@@ -106,16 +126,7 @@
         {% endfor %}
       </ul>
 
-      <!-- Add this block for navigation -->
-      <nav>
-        <ul class="navigation">
-          {% for item in site.navigation %}
-          <li>
-            <a href="{{ item.url | relative_url }}">{{ item.text }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </nav>
+
       
       {%- if site.email -%}
         <p>
