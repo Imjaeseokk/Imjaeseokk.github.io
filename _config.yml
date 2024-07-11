@@ -101,11 +101,11 @@ content:
           Description of role
       - layout: right
         title: Samsung Electronics
-        sub_title: Job title
+        sub_title: CVD Equipment Engineer
         caption: April 2018 - present
         link: Link to company (optional)
         quote: >
-          Memory Thin Film Technology Team
+          Memory Chemical Vapor Deposition Technology Team
         description: | # this will include new lines to allow paragraphs
           Description of role
   - title: Education
