@@ -94,7 +94,7 @@ content:
         title: KEPCO
         sub_title: Job title
         caption: July 2017 - August 2017
-        link: Link to company (optional)
+        # link: Link to company (optional)
         quote: >
           Short description of the company (optional)
         description: | # this will include new lines to allow paragraphs
@@ -105,7 +105,7 @@ content:
         caption: April 2018 - present
         link: Link to company (optional)
         quote: >
-          Short description of the company (optional)
+          Memory Thin Film Technology Team
         description: | # this will include new lines to allow paragraphs
           Description of role
   - title: Education
