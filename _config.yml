@@ -17,6 +17,19 @@ website: https://imjaeseokk.github.io/
 # Your website (eg. https://google.com)
 # website_title: Web (Website title override)
 
+# Navigation
+navigation:
+  - text: "Home"
+    url: "/"
+  - text: "About"
+    url: "/about"
+  - text: "Readlog"
+    url: "/readlog"
+  - text: "Projects"
+    url: "/projects"
+  - text: "Contact"
+    url: "/contact"
+
 # Dark Mode (true/false/never)
 darkmode: false
 
