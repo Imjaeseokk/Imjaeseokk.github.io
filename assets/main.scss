@@ -4,48 +4,48 @@
 
 @import 'modern-resume-theme';
 
-body {
-  font-family: Arial, sans-serif;
-}
+// body {
+//   font-family: Arial, sans-serif;
+// }
 
-header {
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-}
+// header {
+//   background-color: #333;
+//   color: white;
+//   padding: 10px 0;
+//   position: fixed;
+//   width: 100%;
+//   top: 0;
+//   z-index: 1000;
+// }
 
-.top-nav {
-  display: flex;
-  justify-content: center;
-}
+// .top-nav {
+//   display: flex;
+//   justify-content: center;
+// }
 
-.top-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-}
+// .top-nav ul {
+//   list-style-type: none;
+//   margin: 0;
+//   padding: 0;
+//   display: flex;
+//   gap: 20px;
+// }
 
-.top-nav ul li {
-  display: inline;
-}
+// .top-nav ul li {
+//   display: inline;
+// }
 
-.top-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  padding: 10px 20px;
-}
+// .top-nav ul li a {
+//   color: white;
+//   text-decoration: none;
+//   font-size: 16px;
+//   padding: 10px 20px;
+// }
 
-.top-nav ul li a:hover {
-  background-color: #575757;
-  border-radius: 5px;
-}
+// .top-nav ul li a:hover {
+//   background-color: #575757;
+//   border-radius: 5px;
+// }
 
 .container.header-container {
   padding-top: 60px; /* Adjust to ensure content is not hidden behind the fixed nav */
