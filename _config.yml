@@ -22,7 +22,8 @@ darkmode: false
 
 # Social links
 twitter_username: jekyllrb
-github_username:  https://github.com/Imjaeseokk
+github_username:  
+- url: https://github.com/Imjaeseokk
 # stackoverflow_username: "00000001"
 # dribbble_username: jekyll
 # facebook_username: jekyll
