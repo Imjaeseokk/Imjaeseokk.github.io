@@ -37,9 +37,9 @@ linkedin_username: jekyll
 
 # Additional icon links
 additional_links:
-# - title: Link name
-#   icon: fab fa-twitter
-#   url: Link url (eg. https://google.com)
+- title: kaggle
+  icon: fab fa-brands fa-kaggle
+  url: https://www.kaggle.com/jaeseokk
 - title: blog
   icon: fab fa-brands fa-blogger
   url: https://blog.naver.com/jaeseokk_
