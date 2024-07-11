@@ -99,7 +99,6 @@ content:
           Short description of the company (optional)
         description: | # this will include new lines to allow paragraphs
           Description of role
-    content:
       - layout: right
         title: Samsung Electronics
         sub_title: Job title
