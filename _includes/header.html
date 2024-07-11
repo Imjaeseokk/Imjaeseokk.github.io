@@ -106,6 +106,17 @@
         {% endfor %}
       </ul>
 
+      <!-- Add this block for navigation -->
+      <nav>
+        <ul class="navigation">
+          {% for item in site.navigation %}
+          <li>
+            <a href="{{ item.url | relative_url }}">{{ item.text }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      
       {%- if site.email -%}
         <p>
           {{ site.email_title | default: "Email" }}: <a href="mailto:{{ site.email }}" target="_blank">{{ site.email | escape }}</a>
