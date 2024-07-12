@@ -132,16 +132,16 @@ content:
     content:
       - layout: top-right
         title: Ajou University
-        sub_title: Qualifications (eg. BA Performing Arts)
-        caption: Date Range (eg. 2016 - 2019)
+        sub_title: Bachelor's Degree
+        caption: March 2022 - present
         quote: >
-          Short institution or course description (optional)
+          Department of Integrative Systems Engineering
         description: | # this will include new lines to allow paragraphs
           Description of qualification
       - layout: top-right
-        title: Institution name
-        sub_title: Qualifications (eg. BA Performing Arts)
-        caption: Date Range (eg. 2016 - 2019)
+        title: Samsung Electronics Seoul National University R&D Center
+        sub_title: AI Expert
+        caption: May 2024 - present
         quote: >
           Short institution or course description (optional)
         description: | # this will include new lines to allow paragraphs
