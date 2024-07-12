@@ -17,6 +17,12 @@ website: https://imjaeseokk.github.io/
 # Your website (eg. https://google.com)
 # website_title: Web (Website title override)
 
+# for nodes
+collections:
+  readlog:
+    output: true
+    permalink: /readlog/:title/
+
 # Navigation
 navigation:
   - text: "About"
