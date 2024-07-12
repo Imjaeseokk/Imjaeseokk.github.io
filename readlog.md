@@ -7,4 +7,11 @@ permalink: /readlog/
 
 ## Readlog
 
-Content for your Readlog page goes here.
+<ul>
+  {% for entry in site.readlog %}
+    <li>
+      <a href="{{ entry.url }}">{{ entry.title }}</a>
+      <p>{{ entry.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>
