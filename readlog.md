@@ -1,6 +1,6 @@
 <!-- readlog.md -->
 ---
-layout: default
+layout: readlog
 title: "Readlog"
 permalink: /readlog/
 ---
