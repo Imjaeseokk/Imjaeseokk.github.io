@@ -1,4 +1,3 @@
-<!-- readlog.md -->
 ---
 layout: readlog
 title: "Readlog"
