@@ -30,7 +30,7 @@ navigation:
   # - text: "About"
   #   url: "/about"
   - text: "Readlog"
-    url: "/readlog"
+    url: "/readlog/"
   # - text: "Projects"
   #   url: "/projects"
   # - text: "Contact"
