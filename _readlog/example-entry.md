@@ -1,6 +1,6 @@
 <!-- _readlog/example-entry.md -->
 ---
-layout: readlog
+layout: default
 title: "Example Entry"
 date: 2023-07-10
 ---
