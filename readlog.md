@@ -1,6 +1,6 @@
 ---
 layout: readlog
-title: "Readlog"
+title: "Is Readlog"
 permalink: /readlog/
 ---
 
