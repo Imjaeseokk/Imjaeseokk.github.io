@@ -4,7 +4,7 @@ title: "Readlog"
 permalink: /readlog/
 ---
 
-## Readlog
+## This is Readlog
 
 <ul>
   {% for entry in site.readlog %}
