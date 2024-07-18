@@ -62,6 +62,9 @@ additional_links:
 - title: blog
   icon: fab fa-brands fa-blogger
   url: https://blog.naver.com/jaeseokk_
+- title: tistory
+  icon: fab fa-solid fa-text
+  url: https://iamseuki.tistory.com/
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
 #   When add icon, "fab" + html ex) fab + "fa-brands fa-blogger"
