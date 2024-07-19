@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: readlog
 title: "yes Readlog"
 permalink: /readlog/
 ---
