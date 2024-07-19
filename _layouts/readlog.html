@@ -33,37 +33,41 @@
 </html>
 
  -->
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
-</head>
-<body>
-  <header>
-    <nav class="top-nav">
-      <ul>
-        {% for item in site.navigation %}
-        <li><a href="{{ item.url | relative_url }}">{{ item.text }}</a></li>
+{%- include head.html -%}
+
+<body class="{% if site.darkmode == true and site.darkmode != 'never' %}dark{% endif %}">
+
+  {%- include header.html -%}
+
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+
+      {%- if jekyll.environment == 'production' and site.gtm -%}
+        {%- include gtm_body.html -%}
+      {%- endif -%}
+
+      {%- include about.html -%}
+
+      {%- if site.version == 2 -%}
+        {% for section in site.content %}
+          <div class="container {{ section.layout }}-container">
+            <h3 id="{{ section.title | slugify }}">{{ section.title }}</h3>
+            {% include {{ section.layout | prepend: "section-" | append: ".html" }} content=section.content %}
+          </div>
         {% endfor %}
-      </ul>
-    </nav>
-  </header>
-  <div class="container">
-    <h1>{{ page.title }}</h1>
-    <div class="content">
-      <ul>
-        {% for entry in site.readlog %}
-          <li>
-            <a href="{{ entry.url }}">{{ entry.title }}</a>
-            <p>{{ entry.excerpt }}</p>
-          </li>
-        {% endfor %}
-      </ul>
+      {% else %}
+        {%- include v1/default.html -%}
+      {%- endif -%}
     </div>
-  </div>
+  </main>
+
+  {%- include footer.html -%}
+  {% if site.darkmode == false %}
+    <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
+  {% endif %}
 </body>
+
 </html>
