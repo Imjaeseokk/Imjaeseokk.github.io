@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -32,3 +32,38 @@
 </body>
 </html>
 
+ -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <nav class="top-nav">
+      <ul>
+        {% for item in site.navigation %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    <div class="content">
+      <ul>
+        {% for entry in site.readlog %}
+          <li>
+            <a href="{{ entry.url }}">{{ entry.title }}</a>
+            <p>{{ entry.excerpt }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
