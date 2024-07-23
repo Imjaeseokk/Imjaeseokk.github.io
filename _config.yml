@@ -119,7 +119,7 @@ content:
     content:
       - layout: right
         title: KEPCO
-        sub_title: Job title
+        sub_title: Intern (guaranteed full-time position)
         caption: July 2017 - August 2017
         # link: Link to company (optional)
         quote: >
@@ -128,7 +128,7 @@ content:
           Description of role
       - layout: right
         title: Samsung Electronics
-        sub_title: CVD Equipment Engineer
+        sub_title: Equipment Engineer
         caption: April 2018 - present
         link: Link to company (optional)
         quote: >
