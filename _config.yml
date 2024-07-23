@@ -37,7 +37,7 @@ navigation:
   #   url: "/contact"
 
 # Dark Mode (true/false/never)
-darkmode: false
+darkmode: true
 
 # Social links
 twitter_username: jaeseokk963
