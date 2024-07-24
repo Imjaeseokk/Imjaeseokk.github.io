@@ -63,7 +63,7 @@ additional_links:
   icon: fab fa-brands fa-blogger
   url: https://blog.naver.com/jaeseokk_
 - title: tistory
-  icon: fab fab fa-tumblr
+  icon: fa-solid fa-t # fab fab fa-tumblr
   url: https://iamseuki.tistory.com/
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
