@@ -121,22 +121,23 @@ content:
     content:
       - layout: right
         title: KEPCO
-        sub_title: Intern (guaranteed full-time position)
+        sub_title: Transmission and Substation Team
         caption: July 2017 - August 2017
         # link: Link to company (optional)
         quote: >
-          Transmission and Substation Team
+          # quote
         description: | # this will include new lines to allow paragraphs
-          Description of role
+          Intern (guaranteed full-time position)
       - layout: right
         title: Samsung Electronics
-        sub_title: Equipment Engineer
+        sub_title: Memory Chemical Vapor Deposition Technology Team
         caption: April 2018 - present
         link: Link to company (optional)
         quote: >
-          Memory Chemical Vapor Deposition Technology Team
+          quote
         description: | # this will include new lines to allow paragraphs
-          Description of role
+          Equipment Engineer
+          # Description of role
   - title: Education
     layout: list
     content:
@@ -165,7 +166,7 @@ content:
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      I have recently started learning fencing 🤺. 
+      I have recently started learning fencing🤺. 
       Also,I've recently gotten into Texas Hold'em ♠️.
       
       This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
