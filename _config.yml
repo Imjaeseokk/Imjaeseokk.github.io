@@ -159,7 +159,9 @@ content:
         quote: >
           Short institution or course description (optional)
         description: | # this will include new lines to allow paragraphs
-          Description of qualification
+          Coursework in Artificial Intelligence includes topics such as Algorithms, 
+          covering Natural Language Processing, Computer Vision, and Reinforcement Learning, 
+          as well as Systems, including Computer Architecture and Neural Network Accelerators.
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
