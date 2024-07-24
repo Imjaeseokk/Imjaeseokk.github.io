@@ -157,8 +157,8 @@ content:
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      🤺 I have recently started learning fencing.
-      ♠️ Also,I've recently gotten into Texas Hold'em and enjoy playing both on/offline.
+      I have recently started learning fencing 🤺. 
+      Also,I've recently gotten into Texas Hold'em ♠️.
       
       This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
 
