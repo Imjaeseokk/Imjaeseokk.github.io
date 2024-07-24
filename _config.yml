@@ -157,7 +157,7 @@ content:
         sub_title: AI Expert
         caption: May 2024 - present
         quote: >
-          Short institution or course description (optional)
+          # Short institution or course description (optional)
         description: | # this will include new lines to allow paragraphs
           Coursework in Artificial Intelligence includes topics such as Algorithms, 
           covering Natural Language Processing, Computer Vision, and Reinforcement Learning, 
