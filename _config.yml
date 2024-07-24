@@ -148,6 +148,10 @@ content:
           Department of Integrative Systems Engineering
         description: | # this will include new lines to allow paragraphs
           Description of qualification
+            - Freshman 1st Semester Dean's List
+            - Freshman 2nd Semester Dean's List
+            - Sophomore 1st Semester Dean's List
+            - Sophomore 2nd Semester Dean's List
       - layout: top-right
         title: Samsung Electronics Seoul National University R&D Center
         sub_title: AI Expert
