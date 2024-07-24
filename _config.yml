@@ -123,7 +123,7 @@ content:
         title: KEPCO
         sub_title: Transmission and Substation Team
         caption: July 2017 - August 2017
-        # link: Link to company (optional)
+        link: [Link to company](https://home.kepco.co.kr/kepco/EN/main.do)
         quote: >
           # quote
         description: | # this will include new lines to allow paragraphs
@@ -132,12 +132,11 @@ content:
         title: Samsung Electronics
         sub_title: Memory Chemical Vapor Deposition Technology Team
         caption: April 2018 - present
-        link: Link to company (optional)
+        link: [Link to company](https://semiconductor.samsung.com/)
         quote: >
           quote
         description: | # this will include new lines to allow paragraphs
           Equipment Engineer
-          # Description of role
   - title: Education
     layout: list
     content:
