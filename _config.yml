@@ -1,59 +1,24 @@
-# Site
+---
 repository: Imjaeseokk/Imjaeseokk.github.io
-# Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
-# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
-
-# Content configuration version
 version: 2
-
-# Personal info
 name: Jaeseokk Heo
 title: CVD Engineer at Samsung Electronics & BSc Student at Ajou Univ.
-email: kakaokokoa9971@gmail.com 
-# email_title: Email (Email title override)
-# phone: Your phone number 
-# phone_title: Phone (Phone title override)
+email: kakaokokoa9971@gmail.com
 website: https://imjaeseokk.github.io/
-# Your website (eg. https://google.com)
-# website_title: Web (Website title override)
-
 collections:
   readlog:
     output: true
     permalink: /readlog/:title/
-
-# Navigation
 navigation:
-  - text: "About"
-    url: "/"
-  # - text: "About"
-  #   url: "/about"
-  - text: "Readlog"
-    url: "/readlog/"
-  # - text: "Projects"
-  #   url: "/projects"
-  # - text: "Contact"
-  #   url: "/contact"
-
-# Dark Mode (true/false/never)
+  - text: About
+    url: /
+  - text: Readlog
+    url: /readlog/
 darkmode: true
-
-# Social links
 twitter_username: jaeseokk963
 github_username: Imjaeseokk
-# stackoverflow_username: "00000001"
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
 instagram_username: jaeseokk963
 linkedin_username: jaeseok-heo-8379ab237
-# xing_username: jekyll
-# pinterest_username: jekyll
-# youtube_username: jekyll
-# orcid_username: 0000-0000-0000-0000
-# googlescholar_username: D847cGsAAAAJ
-
-# Additional icon links
 additional_links:
   - title: kaggle
     icon: fab fa-brands fa-kaggle
@@ -62,45 +27,34 @@ additional_links:
     icon: fab fa-brands fa-blogger
     url: https://blog.naver.com/jaeseokk_
   - title: tistory
-    icon: fa-solid fa-t # fab fab fa-tumblr
+    icon: fa-solid fa-t
     url: https://iamseuki.tistory.com/
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#   When add icon, "fab" + html ex) fab + "fa-brands fa-blogger"
-#   url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
-
-# About Section
-# about_title: About Me (Use this to override about section title)
 about_profile_image: images/jaeseokk_copy.jpg
-# about_profile_image: Directory of profile image (eg. images/profile.jpg)
-about_content: | # this will include new lines to allow paragraphs
+about_content: >
   Nice 2 Meet U! :)
-  
+
+
   I'm currently an equipment engineer working in the Memory CVD Technology Team at Samsung Electronics. I'm also an undergraduate student
+
   at Ajou University, majoring in Integrative Systems Engineering.
+
   I have a wide range of interests in **Computer Science**, including Deep Learning and Reinforcement Learning.
-  
+
+
   Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
+
 
   You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
     - Lists
     - Tables
     - <a href="google.com">Links</a>
     - Images ![alt text](/images/landscape-trees.jpg "Trees")
-
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
+  - title: Projects
+    layout: list
     content:
       - layout: left
-        border: weak # Value of `weak` will display a weak border below this item.
-                     # Any other value (or no value) means no border will be displayed
+        border: weak
         title: Project name
         link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
         link_text: Link Text
@@ -108,11 +62,10 @@ content:
           - title: Github page for project (eg. sproogen/modern-resume-theme)
             icon: fab fa-github
             url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        quote: >
+        quote: |
           Short overview of the project (optional)
-        description: | 
+        description: |
           Description about the work on/with the project
-
   - title: Experience
     layout: list
     content:
@@ -120,19 +73,19 @@ content:
         title: KEPCO
         sub_title: Transmission and Substation Team
         caption: July 2017 - August 2017
-        link: [Link to company](https://home.kepco.co.kr/kepco/EN/main.do)
-        quote: >
+        link: Link to company(https://home.kepco.co.kr/kepco/EN/main.do)
+        quote: |
           quote
-        description: | # this will include new lines to allow paragraphs
+        description: |
           Intern (guaranteed full-time position)
       - layout: right
         title: Samsung Electronics
         sub_title: Memory Chemical Vapor Deposition Technology Team
         caption: April 2018 - present
-        link: [Link to company](https://semiconductor.samsung.com/)
-        quote: >
+        link: Link to company(https://semiconductor.samsung.com/)
+        quote: |
           quote
-        description: | # this will include new lines to allow paragraphs
+        description: |
           Equipment Engineer
   - title: Education
     layout: list
@@ -141,9 +94,9 @@ content:
         title: Ajou University
         sub_title: Department of Integrative Systems Engineering
         caption: March 2022 - present
-        quote: >
+        quote: |
           quote
-        description: | # this will include new lines to allow paragraphs
+        description: >
           Bachelor's Degree
             - Freshman 1st Semester *[Dean's List](https://www.ajou.ac.kr/eng/intro/dean-2021-2023.do)*
             - Freshman 2nd Semester Dean's List
@@ -153,45 +106,41 @@ content:
         title: Samsung Electronics Seoul National University R&D Center
         sub_title: AI Expert
         caption: May 2024 - present
-        quote: >
+        quote: |
           # Short institution or course description (optional)
-        description: | # this will include new lines to allow paragraphs
-          Coursework in Artificial Intelligence includes topics such as Algorithms, 
+        description: >
+          Coursework in Artificial Intelligence includes topics such as
+          Algorithms, 
+
           covering Natural Language Processing, Computer Vision, and Reinforcement Learning, 
+
           as well as Systems, including Computer Architecture and Neural Network Accelerators.
   - title: A Little More About Me
     layout: text
-    content: | # this will include new lines to allow paragraphs
+    content: >
       I have recently started learning fencing🤺. 
+
       Also,I've recently gotten into Texas Hold'em ♠️.
-      
+
+
       This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
 
+
       Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
-
-# Footer
 footer_show_references: true
-# references_title: References on request (Override references text)
-
-# Build settings
-# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
-# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
-
 sass:
   sass_dir: _sass
   style: compressed
-
 plugins:
   - jekyll-seo-tag
-
 exclude:
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "node_modules"
-  - "vendor/bundle/"
-  - "vendor/cache/"
-  - "vendor/gems/"
-  - "vendor/ruby/"
-  - "lib/"
-  - "scripts/"
-  - "docker-compose.yml"
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - lib/
+  - scripts/
+  - docker-compose.yml
