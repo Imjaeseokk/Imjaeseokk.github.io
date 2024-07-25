@@ -120,15 +120,15 @@ content:
   - title: Experience
     layout: list
     content:
-      - layout: right
-        title: KEPCO
-        sub_title: Transmission and Substation Team
-        caption: July 2017 - August 2017
-        link: [Link to company](https://home.kepco.co.kr/kepco/EN/main.do)
-        quote: >
-          quote
-        description: | # this will include new lines to allow paragraphs
-          Intern (guaranteed full-time position)
+      # - layout: right
+      #   title: KEPCO
+      #   sub_title: Transmission and Substation Team
+      #   caption: July 2017 - August 2017
+      #   link: [Link to company](https://home.kepco.co.kr/kepco/EN/main.do)
+      #   quote: >
+      #     quote
+      #   description: | # this will include new lines to allow paragraphs
+      #     Intern (guaranteed full-time position)
       - layout: right
         title: Samsung Electronics
         sub_title: Memory Chemical Vapor Deposition Technology Team
