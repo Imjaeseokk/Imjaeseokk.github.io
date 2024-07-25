@@ -17,7 +17,6 @@ website: https://imjaeseokk.github.io/
 # Your website (eg. https://google.com)
 # website_title: Web (Website title override)
 
-
 collections:
   readlog:
     output: true
@@ -56,15 +55,15 @@ linkedin_username: jaeseok-heo-8379ab237
 
 # Additional icon links
 additional_links:
-- title: kaggle
-  icon: fab fa-brands fa-kaggle
-  url: https://www.kaggle.com/jaeseokk
-- title: blog
-  icon: fab fa-brands fa-blogger
-  url: https://blog.naver.com/jaeseokk_
-- title: tistory
-  icon: fa-solid fa-t # fab fab fa-tumblr
-  url: https://iamseuki.tistory.com/
+  - title: kaggle
+    icon: fab fa-brands fa-kaggle
+    url: https://www.kaggle.com/jaeseokk
+  - title: blog
+    icon: fab fa-brands fa-blogger
+    url: https://blog.naver.com/jaeseokk_
+  - title: tistory
+    icon: fa-solid fa-t # fab fab fa-tumblr
+    url: https://iamseuki.tistory.com/
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
 #   When add icon, "fab" + html ex) fab + "fa-brands fa-blogger"
@@ -100,16 +99,13 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item.
-                      # other value (or no value) means no border will be displayed
+        border: weak # Value of `weak` will display a weak border below this item.
+                     # Any other value (or no value) means no border will be displayed
         title: Project name
         link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
         link_text: Link Text
         additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          - title: Github page for project (eg. sproogen/modern-resume-theme)
             icon: fab fa-github
             url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
         quote: >
@@ -186,17 +182,16 @@ sass:
   style: compressed
 
 plugins:
- - jekyll-seo-tag
+  - jekyll-seo-tag
 
-exclude : [
-  "Gemfile",
-  "Gemfile.lock",
-  "node_modules",
-  "vendor/bundle/",
-  "vendor/cache/",
-  "vendor/gems/",
-  "vendor/ruby/",
-  "lib/",
-  "scripts/",
-  "docker-compose.yml",
-  ]
+exclude:
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules"
+  - "vendor/bundle/"
+  - "vendor/cache/"
+  - "vendor/gems/"
+  - "vendor/ruby/"
+  - "lib/"
+  - "scripts/"
+  - "docker-compose.yml"
