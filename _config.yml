@@ -79,16 +79,17 @@ content:
         sub_title: Transmission and Substation Team
         caption: July 2017 - August 2017
         link: Link to company(https://home.kepco.co.kr/kepco/EN/main.do)
+        link_ text: Link to company
         quote: |
           quote
         description: |
           Intern (guaranteed full-time position)
       - layout: right
-        title: Samsung Electronics
+        title: Samsung Electronics Device Solution
         sub_title: Memory Chemical Vapor Deposition Technology Team
         caption: April 2018 - present
         link: link to company(https://semiconductor.samsung.com/)
-        link_text: Company
+        link_text: Link to company
         quote: |
           quote
         description: |
