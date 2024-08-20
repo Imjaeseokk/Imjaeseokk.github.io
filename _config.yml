@@ -104,7 +104,7 @@ content:
         link: link to company(https://semiconductor.samsung.com/)
         link_text: Link to company
         quote: |
-          quote
+#          quote
         description: |
           Equipment Engineer
   - title: Education
