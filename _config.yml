@@ -29,6 +29,13 @@ additional_links:
   - title: tistory
     icon: fas fa-t
     url: https://iamseuki.tistory.com/
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+google_analytics: G-T2MM9F6NQ4
+
 about_profile_image: images/jaeseokk_copy.jpg
 about_content: >
   Nice 2 Meet U! :)
