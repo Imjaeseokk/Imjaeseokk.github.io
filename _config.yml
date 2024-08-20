@@ -60,10 +60,10 @@ about_content: >
 
 
 
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
+  # Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
 
 
-  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
+  # You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
     - Lists
     - Tables
     - <a href="google.com">Links</a>
@@ -145,10 +145,10 @@ content:
 
       
 
-      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
+      # This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
 
 
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+      # Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
 footer_show_references: true
 sass:
   sass_dir: _sass
