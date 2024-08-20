@@ -94,7 +94,7 @@ content:
         link: link to company(https://home.kepco.co.kr/kepco/EN/main.do)
         link_text: Link to company
         quote: |
-          quote
+#          quote
         description: |
           Intern (guaranteed full-time)
       - layout: right
@@ -115,7 +115,7 @@ content:
         sub_title: Department of Integrative Systems Engineering
         caption: March 2022 - present
         quote: |
-          quote
+#          quote
         description: >
           Bachelor's Degree
             - Freshman 1st Semester *[Dean's List](https://www.ajou.ac.kr/eng/intro/dean-2021-2023.do)*
