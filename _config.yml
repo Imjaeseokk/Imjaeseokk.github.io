@@ -139,6 +139,15 @@ content:
           covering Natural Language Processing, Computer Vision, and Reinforcement Learning, 
 
           as well as Systems, including Computer Architecture and Neural Network Accelerators.
+  - title: Certification
+    layout: list
+    content:
+      - layout: top-left
+        title: test
+        sub_title: test_sub
+        caption: test caption
+        description: >
+          Wow!
   - title: A Little More About Me
     layout: text
     content: >
