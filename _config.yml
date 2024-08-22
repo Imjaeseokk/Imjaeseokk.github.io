@@ -102,7 +102,7 @@ content:
         quote: |
 #          quote
         description: >
-          Intern (guaranteed full-time)
+#          Intern (guaranteed full-time)
       - layout: top-left
         title: Samsung Electronics Device Solution
         sub_title: Memory Chemical Vapor Deposition Technology Team
@@ -112,7 +112,7 @@ content:
         quote: |
 #          quote
         description: >
-          Equipment Engineer
+#          Equipment Engineer
   - title: Education
     layout: list
     content:
