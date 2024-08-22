@@ -103,7 +103,7 @@ content:
 #          quote
         description: >
           Intern (guaranteed full-time)
-      - layout: left
+      - layout: top-left
         title: Samsung Electronics Device Solution
         sub_title: Memory Chemical Vapor Deposition Technology Team
         caption: April 2018 - present
