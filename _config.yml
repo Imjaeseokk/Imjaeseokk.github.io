@@ -93,7 +93,7 @@ content:
   - title: Experience
     layout: list
     content:
-      - layout: left
+      - layout: top-left
         title: KEPCO
         sub_title: Transmission and Substation Team
         caption: July 2017 - August 2017
