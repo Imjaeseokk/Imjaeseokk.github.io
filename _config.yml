@@ -101,7 +101,7 @@ content:
         link_text: Link to company
         quote: |
 #          quote
-        description: |
+        description: >
           Intern (guaranteed full-time)
       - layout: left
         title: Samsung Electronics Device Solution
@@ -111,7 +111,7 @@ content:
         link_text: Link to company
         quote: |
 #          quote
-        description: |
+        description: >
           Equipment Engineer
   - title: Education
     layout: list
