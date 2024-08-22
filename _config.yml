@@ -93,7 +93,7 @@ content:
   - title: Experience
     layout: list
     content:
-      - layout: right
+      - layout: top-left
         title: KEPCO
         sub_title: Transmission and Substation Team
         caption: July 2017 - August 2017
@@ -103,7 +103,7 @@ content:
 #          quote
         description: |
           Intern (guaranteed full-time)
-      - layout: right
+      - layout: top-left
         title: Samsung Electronics Device Solution
         sub_title: Memory Chemical Vapor Deposition Technology Team
         caption: April 2018 - present
@@ -116,7 +116,7 @@ content:
   - title: Education
     layout: list
     content:
-      - layout: top-right
+      - layout: top-left
         title: Ajou University
         sub_title: Department of Integrative Systems Engineering
         caption: March 2022 - present
@@ -129,7 +129,7 @@ content:
             - Sophomore 1st Semester Dean's List
             - Sophomore 2nd Semester Dean's List
             - **Sophomore Highest Academic Achievement Award**
-      - layout: top-right
+      - layout: top-left
         title: Samsung Electronics Seoul National University R&D Center
         sub_title: AI Expert
         caption: May 2024 - present
@@ -145,7 +145,7 @@ content:
   - title: Certification
     layout: list
     content:
-      - layout: left
+      - layout: top-left
         title: test
         sub_title: test_sub
         caption: test caption
