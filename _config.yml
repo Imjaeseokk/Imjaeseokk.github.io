@@ -116,7 +116,7 @@ content:
   - title: Education
     layout: list
     content:
-      - layout: top-left
+      - layout: top-right
         title: Ajou University
         sub_title: Department of Integrative Systems Engineering
         caption: March 2022 - present
@@ -129,7 +129,7 @@ content:
             - Sophomore 1st Semester Dean's List
             - Sophomore 2nd Semester Dean's List
             - **Sophomore Highest Academic Achievement Award**
-      - layout: top-left
+      - layout: right
         title: Samsung Electronics Seoul National University R&D Center
         sub_title: AI Expert
         caption: May 2024 - present
