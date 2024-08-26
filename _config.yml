@@ -151,6 +151,7 @@ content:
 #        caption: test caption
         description: >
             - Data Science Certification **Advanced**
+            
             - Software Certification **Advanced**
   - title: A Little More About Me
     layout: text
