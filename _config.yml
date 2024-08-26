@@ -145,16 +145,18 @@ content:
   - title: Certification
     layout: list
     content:
-      - layout: top-left
-        title: test
-        sub_title: test_sub
+      - layout: top
+        title: Samsung Electronics Device Solution
+        sub_title: In-House Certification
         caption: test caption
         description: >
-          Wow! good
+          Data Science Certification **Advanced**
+          Software Certification **Advanced**
   - title: A Little More About Me
     layout: text
     content: >
       I have recently started learning Fencing🤺. 
+      
 
       Also,I've recently gotten into Texas Hold'em ♠️.
 
