@@ -150,8 +150,8 @@ content:
         sub_title: In-House Certification
 #        caption: test caption
         description: >
-          - Data Science Certification **Advanced**
-          - Software Certification **Advanced**
+            - Data Science Certification **Advanced**
+            - Software Certification **Advanced**
   - title: A Little More About Me
     layout: text
     content: >
