@@ -148,7 +148,8 @@ content:
         description: >
           Courseworks
              - [Game Theory](https://www.coursera.org/learn/game-theory-1/home/welcome)
-          ~~Degrees~~
+             
+          Degrees
   - title: Certification
     layout: list
     content:
