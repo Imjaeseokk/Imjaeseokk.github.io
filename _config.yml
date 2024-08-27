@@ -142,6 +142,13 @@ content:
           covering Natural Language Processing, Computer Vision, and Reinforcement Learning, 
 
           as well as Systems, including Computer Architecture and Neural Network Accelerators.
+      - layout: top-right
+        title: Coursera
+        sub_title: Online Coursework
+        description: >
+          Courseworks
+             - [Game Theory](https://www.coursera.org/learn/game-theory-1/home/welcome)
+          ~~Degrees~~
   - title: Certification
     layout: list
     content:
