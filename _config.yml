@@ -89,7 +89,7 @@ content:
         quote: |
           Short overview of the project (optional)
         description: >
-          Description about the work on/with the project
+          Quiz for intersting expression and operating of Python! Based on [wtfpython](https://github.com/satwikkansal/wtfpython)
       - layout: left
         border: solid
         title: Project name
