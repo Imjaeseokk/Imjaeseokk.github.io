@@ -89,7 +89,12 @@ content:
         quote: |
           Short overview of the project (optional)
         description: >
-          Quiz for intersting expression and operating of Python! Based on [wtfpython](https://github.com/satwikkansal/wtfpython)
+          "WTFPython Quiz" is a web-based quiz that challenges users to explore the unexpected and quirky 
+          behaviors of Python. Based on the popular [WTFPython project](https://github.com/satwikkansal/wtfpython), it helps developers of all levels understand 
+          Python's hidden intricacies by solving fun and educational questions. 
+          Through this quiz, users can test their Python knowledge and gain insights into the language’s 
+          surprising behavior, improving their coding skills and awareness of potential pitfalls.
+          
       - layout: left
         border: solid
         title: Project name
