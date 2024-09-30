@@ -88,7 +88,7 @@ content:
             url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
         quote: |
           Short overview of the project (optional)
-        description: |
+        description: 
           Description about the work on/with the project
       - layout: left
         border: weak
