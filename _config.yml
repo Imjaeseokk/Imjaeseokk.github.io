@@ -78,12 +78,12 @@ content:
     layout: list
     content:
       - layout: left
-        border: weak
-        title: Project name
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
+        border: none
+        title: WTFPython Quiz
+        link: Link to project (http://jaeseokk963wtfpython.s3-website.ap-northeast-2.amazonaws.com/)(optional)
+        link_text: wtfpython-quiz
         additional_links:
-          - title: Github page for project (eg. sproogen/modern-resume-theme)
+          - title: Github page for project (https://github.com/Imjaeseokk/Homework/tree/main/wtfpython)
             icon: fab fa-github
             url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
         quote: |
@@ -91,7 +91,7 @@ content:
         description: >
           Description about the work on/with the project
       - layout: left
-        border: weak
+        border: solid
         title: Project name
         link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
         link_text: Link Text
