@@ -85,7 +85,7 @@ content:
         additional_links:
           - title: Github page for project (https://github.com/Imjaeseokk/Homework/tree/main/wtfpython)
             icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+            url: Link to project (https://github.com/Imjaeseokk/Homework/tree/main/wtfpython)
         quote: |
           This is my first Web Service Project!
         description: >
