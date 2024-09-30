@@ -87,7 +87,7 @@ content:
             icon: fab fa-github
             url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
         quote: |
-          Short overview of the project (optional)
+          This is my first Web Service Project!
         description: >
           "WTFPython Quiz" is a web-based quiz that challenges users to explore the unexpected and quirky 
           behaviors of Python. Based on the popular [WTFPython project](https://github.com/satwikkansal/wtfpython), it helps developers of all levels understand 
