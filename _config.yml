@@ -105,7 +105,7 @@ content:
             icon: fab fa-github
             url: Link to project (https://github.com/Pjshare/ajou_robobarista_robot)
         quote: |
-          Short overview of the project (optional)
+          "Paran Semester" project in Ajou Univ.
         description: |
           Using deep learning and a robotic system, we developed a barista robot capable of taking coffee orders and brewing coffee.
   - title: Careers
