@@ -97,17 +97,17 @@ content:
           
       - layout: left
         border: solid
-        title: Project name
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
+        title: RoboBarista
+        link: Link to project (https://github.com/Pjshare/ajou_robobarista_robot)
+        link_text: RoboBarista
         additional_links:
           - title: Github page for project (eg. sproogen/modern-resume-theme)
             icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+            url: Link to project (https://github.com/Pjshare/ajou_robobarista_robot)
         quote: |
           Short overview of the project (optional)
         description: |
-          Description about the work on/with the project
+          Using deep learning and a robotic system, we developed a barista robot capable of taking coffee orders and brewing coffee.
   - title: Careers
     layout: list
     content:
