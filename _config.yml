@@ -43,7 +43,7 @@ about_content: >
 
   I have a wide range of interests in **Computer Science**, including deep learning and reinforcement Learning.
 
-  I'm currently an equipment engineer working in the Memory CVD Technology Team at Samsung Electronics. I'm also an undergraduate student
+  I'm currently an <mark>equipment engineer</mark> working in the Memory CVD Technology Team at Samsung Electronics. I'm also an undergraduate student
 
   at Ajou University, majoring in Integrative Systems Engineering. 
 
@@ -60,9 +60,11 @@ about_content: >
   - data analysis/mining
 
   - computer vision 
-  
+
   - fundamental computer science courses including data structure and algorithms, and databases. 
   
+
+
   Additionally, I'm learning computer architecture and operating systems through Coursera.
 
   
@@ -71,6 +73,8 @@ about_content: >
   - digital logic circuits 
 
   - microcontroller Applications using ATmega and STM chip series. 
+
+
 
   This helped me understand the architecture and operation of computers.
 
