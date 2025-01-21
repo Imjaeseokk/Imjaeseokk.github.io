@@ -109,19 +109,19 @@ content:
     #       Python's hidden intricacies by solving fun and educational questions. 
     #       Through this quiz, users can test their Python knowledge and gain insights into the language’s 
     #       surprising behavior, improving their coding skills and awareness of potential pitfalls.
-      - layout: left
-        border: solid
-        title: LABOR ROBOT
-        # link: Link to project (https://github.com/Imjaeseokk/Ajou-Computer_vision_and_robot_design)
-        # link_text: LABOR ROBOT
-        additional_links:
-          - title: LABOR ROBOT
-            icon: fab fa-github
-            url: Link to project (https://github.com/Imjaeseokk/Ajou-Computer_vision_and_robot_design)
-        quote: |
-          Team project in Computer Vision and Robot Design course in Ajou Univ
-        description: |
-          ✋ Hand gesture-based control system for service robots, utilizing TurtleBot3 and computer vision including Detectron2 and Mediapipe.
+      layout: left
+      border: solid
+      title: LABOR ROBOT
+      # link: Link to project (https://github.com/Imjaeseokk/Ajou-Computer_vision_and_robot_design)
+      # link_text: LABOR ROBOT
+      additional_links:
+        - title: LABOR ROBOT
+          icon: fab fa-github
+          url: Link to project (https://github.com/Imjaeseokk/Ajou-Computer_vision_and_robot_design)
+      quote: |
+        Team project in Computer Vision and Robot Design course in Ajou Univ
+      description: |
+        ✋ Hand gesture-based control system for service robots, utilizing TurtleBot3 and computer vision including Detectron2 and Mediapipe.
 
       - layout: left
         border: solid
