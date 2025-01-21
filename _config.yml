@@ -90,54 +90,84 @@ about_content: >
 #     - Images ![alt text](/images/landscape-trees.jpg "Trees")
 content:
   - title: Projects
-    layout: list
-    content:
+    # layout: list
+    # content:
+    #   - layout: left
+    #     border: none
+    #     title: WTFPython Quiz
+    #     link: Link to project (http://jaeseokk963wtfpython.s3-website.ap-northeast-2.amazonaws.com/)(optional)
+    #     link_text: wtfpython-quiz
+    #     additional_links:
+    #       - title: Github page for project (https://github.com/Imjaeseokk/Homework/tree/main/wtfpython)
+    #         icon: fab fa-github
+    #         url: https://github.com/Imjaeseokk/Homework/tree/main/wtfpython
+    #     quote: |
+    #       This is my first Web Service Project!
+    #     description: >
+    #       "WTFPython Quiz" is a web-based quiz that challenges users to explore the unexpected and quirky 
+    #       behaviors of Python. Based on the popular [WTFPython project](https://github.com/satwikkansal/wtfpython), it helps developers of all levels understand 
+    #       Python's hidden intricacies by solving fun and educational questions. 
+    #       Through this quiz, users can test their Python knowledge and gain insights into the language’s 
+    #       surprising behavior, improving their coding skills and awareness of potential pitfalls.
       - layout: left
-        border: none
-        title: WTFPython Quiz
-        link: Link to project (http://jaeseokk963wtfpython.s3-website.ap-northeast-2.amazonaws.com/)(optional)
-        link_text: wtfpython-quiz
+        border: solid
+        title: LABOR ROBOT
+        # link: Link to project (https://github.com/Imjaeseokk/Ajou-Computer_vision_and_robot_design)
+        # link_text: LABOR ROBOT
         additional_links:
-          - title: Github page for project (https://github.com/Imjaeseokk/Homework/tree/main/wtfpython)
+          - title: LABOR ROBOT
             icon: fab fa-github
-            url: https://github.com/Imjaeseokk/Homework/tree/main/wtfpython
+            url: Link to project (https://github.com/Imjaeseokk/Ajou-Computer_vision_and_robot_design)
         quote: |
-          This is my first Web Service Project!
-        description: >
-          "WTFPython Quiz" is a web-based quiz that challenges users to explore the unexpected and quirky 
-          behaviors of Python. Based on the popular [WTFPython project](https://github.com/satwikkansal/wtfpython), it helps developers of all levels understand 
-          Python's hidden intricacies by solving fun and educational questions. 
-          Through this quiz, users can test their Python knowledge and gain insights into the language’s 
-          surprising behavior, improving their coding skills and awareness of potential pitfalls.
-          
+          Team project in Computer Vision and Robot Design course in Ajou Univ
+        description: |
+          ✋ Hand gesture-based control system for service robots, utilizing TurtleBot3 and computer vision including Detectron2 and Mediapipe.
+
+      - layout: left
+        border: solid
+        title: DivetoVibe
+        # link: Link to project (https://github.com/Imjaeseokk/Ajou-Computer_vision_and_robot_design)
+        # link_text: LABOR ROBOT
+        additional_links:
+          - title: DivetoVibe
+            icon: fab fa-github
+            url: Link to project (https://github.com/Imjaeseokk/Ajou-Social_network_analysis/tree/main/Project)
+        quote: |
+          Team project in Social Network Analysis course in Ajou Univ
+        description: |
+          🎧 Music recommendation system utilizing sentiment analysis results of lyrics to suggest songs matching user emotions.
+
+
       - layout: left
         border: solid
         title: RoboBarista
-        link: Link to project (https://github.com/Pjshare/ajou_robobarista_robot)
-        link_text: RoboBarista
+        # link: Link to project (https://github.com/RoboBarista)
+        # link_text: RoboBarista
         additional_links:
-          - title: Github page for project (eg. sproogen/modern-resume-theme)
+          - title: RoboBarista
             icon: fab fa-github
-            url: Link to project (https://github.com/Pjshare/ajou_robobarista_robot)
+            url: Link to project (https://github.com/RoboBarista)
         quote: |
-          "Paran Semester" project in Ajou Univ.
+          **Paran semester** team project in Ajou Univ
         description: |
-          Using deep learning and a robotic system, we developed a barista robot capable of taking coffee orders and brewing coffee.
-      
+          ☕ Developed a 6-axis coffee drip robot using ROS2 and computer vision for real-time control and precise object handling.
+          ☁ Paran semester is a self-directed program where students design and execute projects to develop autonomy and create meaningful impact.
+
       - layout: top
         border: solid
         title: "CV^2D: Monitoring System for Plasma in CVD Process using Computer Vision"
-        link: Link to project (https://github.com/Pjshare/ajou_robobarista_robot)
-        link_text: RoboBarista
-        additional_links:
-          - title: Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (https://github.com/Pjshare/ajou_robobarista_robot)
+        # link: Link to project (https://github.com/Pjshare/ajou_robobarista_robot)
+        # link_text: RoboBarista
+        # additional_links:
+        #   - title: Github page for project (eg. sproogen/modern-resume-theme)
+        #     icon: fab fa-github
+        #     url: Link to project (https://github.com/Pjshare/ajou_robobarista_robot)
         quote: |
-          "Paran Semester" project in Ajou Univ.
+          Research project in AI Expert coursework at Samsung Electronics - Seoul National University R&D Center
         description: |
-          Using deep learning and a robotic system, we developed a barista robot capable of taking coffee orders and brewing coffee.
-
+          ⚡ Monitoring system for plasma in the CVD process using CV, including image classification and image-based multivariable regression.
+  
+  
   - title: Careers
     layout: list
     content:
