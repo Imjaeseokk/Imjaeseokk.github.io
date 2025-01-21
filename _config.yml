@@ -121,7 +121,7 @@ content:
         quote: |
           Team project in Computer Vision and Robot Design course in Ajou Univ
         description: |
-          ✋ Hand gesture-based control system for service robots, utilizing TurtleBot3 and computer vision including Detectron2 and Mediapipe.
+          Hand gesture-based control system for service robots, utilizing TurtleBot3 and computer vision including Detectron2 and Mediapipe.
 
       - layout: left
         border: solid
@@ -135,7 +135,7 @@ content:
         quote: |
           Team project in Social Network Analysis course in Ajou Univ
         description: |
-          🎧 Music recommendation system utilizing sentiment analysis results of lyrics to suggest songs matching user emotions.
+          Music recommendation system utilizing sentiment analysis results of lyrics to suggest songs matching user emotions.
 
 
       - layout: left
@@ -150,9 +150,9 @@ content:
         quote: |
           Paran semester team project in Ajou Univ
         description: |
-          ☕ Developed a 6-axis coffee drip robot using ROS2 and computer vision for real-time control and precise object handling.
+          Developed a 6-axis coffee drip robot using ROS2 and computer vision for real-time control and precise object handling.
           
-          ☁ Paran semester is a self-directed program where students design and execute projects to develop autonomy and create meaningful impact.
+          Paran semester is a self-directed program where students design and execute projects to develop autonomy and create meaningful impact.
 
       - layout: top
         border: solid
@@ -166,7 +166,7 @@ content:
         quote: |
           Research project in AI Expert coursework at Samsung Electronics - Seoul National University R&D Center
         description: |
-          ⚡ Monitoring system for plasma in the CVD process using CV, including image classification and image-based multivariable regression.
+          Monitoring system for plasma in the CVD process using CV, including image classification and image-based multivariable regression.
   
   
   - title: Careers
@@ -199,7 +199,7 @@ content:
   - title: Education
     layout: list
     content:
-      - layout: top-right
+      - layout: left
         title: Ajou University
         sub_title: Department of Integrative Systems Engineering
         caption: March 2022 - present
@@ -212,7 +212,8 @@ content:
             - Sophomore 1st Semester Dean's List
             - Sophomore 2nd Semester Dean's List
             - **Sophomore Highest Academic Achievement Award**
-      - layout: top-right
+
+      - layout: left
         title: Samsung Electronics Seoul National University R&D Center
         sub_title: AI Expert
         caption: May 2024 - December 2024
@@ -225,7 +226,7 @@ content:
           covering Natural Language Processing, Computer Vision, and Reinforcement Learning, 
 
           as well as Systems, including Computer Architecture and Neural Network Accelerators.
-      - layout: top-right
+      - layout: left
         title: Coursera
         sub_title: Online Coursework
         description: >
