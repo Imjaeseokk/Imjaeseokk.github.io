@@ -148,9 +148,10 @@ content:
             icon: fab fa-github
             url: Link to project (https://github.com/RoboBarista)
         quote: |
-          **Paran semester** team project in Ajou Univ
+          Paran semester team project in Ajou Univ
         description: |
           ☕ Developed a 6-axis coffee drip robot using ROS2 and computer vision for real-time control and precise object handling.
+          
           ☁ Paran semester is a self-directed program where students design and execute projects to develop autonomy and create meaningful impact.
 
       - layout: top
@@ -171,16 +172,7 @@ content:
   - title: Careers
     layout: list
     content:
-      - layout: top
-        title: KEPCO
-        sub_title: Transmission and Substation Team
-        caption: July 2017 - August 2017
-        link: link to company(https://home.kepco.co.kr/kepco/EN/main.do)
-        link_text: Link to company
-        quote: |
-#          quote
-        description: >
-#          Intern (guaranteed full-time)
+
       - layout: top
         title: Samsung Electronics Device Solution
         sub_title: Memory Chemical Vapor Deposition Technology Team
@@ -191,6 +183,19 @@ content:
 #          quote
         description: >
 #          Equipment Engineer
+
+      - layout: top
+        title: KEPCO
+        sub_title: Transmission and Substation Team
+        caption: July 2017 - August 2017
+        link: link to company(https://home.kepco.co.kr/kepco/EN/main.do)
+        link_text: Link to company
+        quote: |
+#          quote
+        description: >
+#          Intern (guaranteed full-time)
+
+
   - title: Education
     layout: list
     content:
@@ -210,7 +215,7 @@ content:
       - layout: top-right
         title: Samsung Electronics Seoul National University R&D Center
         sub_title: AI Expert
-        caption: May 2024 - present
+        caption: May 2024 - December 2024
         quote: |
 #            Short institution or course description (optional)
         description: >
@@ -232,13 +237,24 @@ content:
     layout: list
     content:
       - layout: top
-        title: Samsung Electronics Device Solution
-        sub_title: In-House Certification
-#        caption: test caption
+        title: Engineer Information Processing
+        sub_title: Human Resources Development Service of Korea (HRDK)
+
+      - layout: top
+        title: Advanced Data Analytics Semi-Professional(ADsP)
+        sub_title: Korea Data Agency (K-DATA)
+
+      - layout: top
+        title: Data Science Certification
+        sub_title: Samsung Electronics Device Solution in-house certification
         description: >
-            - Data Science Certification **Advanced**
-            
-            - Software Certification **Advanced**
+            - **Advanced**
+      - layout: top
+        title: Software Certification
+        sub_title: Samsung Electronics Device Solution in-house certification
+        description: >
+            - **Advanced**
+
   - title: A Little More About Me
     layout: text
     content: >
