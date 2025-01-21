@@ -41,10 +41,7 @@ about_content: >
   Nice 2 Meet U! :)
 
 
-  I love learning about new fields and acquiring knowledge I didn't know before, constantly pushing myself to improve. Whenever I identify weaknesses or shortcomings, I strive to address them, aiming to grow a little every day.
-
-  
-  I have a wide range of interests in **Computer Science**, including Deep Learning and Reinforcement Learning.
+  I have a wide range of interests in **Computer Science**, including deep learning and reinforcement Learning.
 
   I'm currently an equipment engineer working in the Memory CVD Technology Team at Samsung Electronics. I'm also an undergraduate student
 
@@ -53,15 +50,22 @@ about_content: >
 
   In my role, I'm responsible for developing a monitoring platform for anomaly detection and production status tracking
   
-  through production data analysis, as well as Optimizing the hardware structure and conditions of CVD equipment
+  through production data analysis, as well as optimizing the hardware structure and conditions of CVD equipments.
 
 
-  In my undergraduate major, I'm studying System Optimization, Data Analysis/Mining, Computer Vision and fundamental Computer Science courses
+  In my undergraduate major, I'm studying 
+  - system optimization
+  - data analysis/mining
+  - computer vision 
+  - fundamental computer science courses including data structure and algorithms, and databases. 
   
-  including Data Structure and Algorithms, and Databases. Additionally, I'm learning Computer Architecture and Operating Systems through Coursera.
+  Additionally, I'm learning computer architecture and operating systems through Coursera.
 
   
-  In high school, I studied Digital Logic Circuits and Microcontroller Applications using ATmega and STM chip series. This helped me understand the architecture and operation of computers.
+  In high school, I studied 
+  - digital logic circuits 
+  - microcontroller Applications using ATmega and STM chip series. 
+  This helped me understand the architecture and operation of computers.
 
 
 
@@ -205,6 +209,10 @@ content:
 
       I'm a big fan of football. I played as the captain and left forward on both my middle and high school football teams. 
       Unfortunately, due to several knee injuries, I'm no longer able to play.
+
+      I love learning about new fields and acquiring knowledge I didn't know before, constantly pushing myself to improve. Whenever I identify weaknesses or shortcomings, I strive to address them, aiming to grow a little every day.
+
+  
 
     
 footer_show_references: true
