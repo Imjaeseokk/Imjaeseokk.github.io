@@ -206,6 +206,20 @@ content:
     layout: list
     content:
       - layout: left
+        title: Samsung Electronics Seoul National University R&D Center
+        sub_title: AI Expert
+        caption: May 2024 - December 2024
+        quote: |
+#            Short institution or course description (optional)
+        description: >
+          Coursework in Artificial Intelligence includes topics such as
+          Algorithms, 
+
+          covering Natural Language Processing, Computer Vision, and Reinforcement Learning, 
+
+          as well as Systems, including Computer Architecture and Neural Network Accelerators.
+          
+      - layout: left
         title: Ajou University
         sub_title: Department of Integrative Systems Engineering
         caption: March 2022 - present
@@ -219,25 +233,13 @@ content:
             - Sophomore 2nd Semester Dean's List
             - **Sophomore Highest Academic Achievement Award**
 
-      - layout: left
-        title: Samsung Electronics Seoul National University R&D Center
-        sub_title: AI Expert
-        caption: May 2024 - December 2024
-        quote: |
-#            Short institution or course description (optional)
-        description: >
-          Coursework in Artificial Intelligence includes topics such as
-          Algorithms, 
 
-          covering Natural Language Processing, Computer Vision, and Reinforcement Learning, 
-
-          as well as Systems, including Computer Architecture and Neural Network Accelerators.
-      - layout: left
-        title: Coursera
-        sub_title: Online Coursework
-        description: >
-          Courseworks
-             - [Game Theory](https://www.coursera.org/learn/game-theory-1/home/welcome)
+#      - layout: left
+#        title: Coursera
+#        sub_title: Online Coursework
+#        description: >
+#          Courseworks
+#             - [Game Theory](https://www.coursera.org/learn/game-theory-1/home/welcome)
              
 #         Degrees
   - title: Certification
