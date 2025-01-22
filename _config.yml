@@ -52,9 +52,6 @@ about_content: >
 
   Also, I analyze data from large-scale semiconductor fabs and build real-time monitoring systems.
 
-  # In my role, I'm responsible for developing a monitoring platform for anomaly detection and production status tracking
-    
-  # through production data analysis, as well as optimizing the hardware structure and conditions of CVD equipments.
 
 
   In my undergraduate major, I'm studying 
@@ -67,6 +64,11 @@ about_content: >
 
   - fundamental computer science courses including data structure and algorithms, and databases. 
   
+
+# In my role, I'm responsible for developing a monitoring platform for anomaly detection and production status tracking
+    
+# through production data analysis, as well as optimizing the hardware structure and conditions of CVD equipments.
+
 
 
 #  Additionally, I'm learning computer architecture and operating systems through Coursera.
