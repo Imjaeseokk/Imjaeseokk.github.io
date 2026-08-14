@@ -1,0 +1,17 @@
+---
+title: Work
+permalink: /work/
+description: Selected projects by Jaeseok Heo in computer vision, robotics, semiconductor engineering, and data.
+---
+<section class="page-intro shell reveal">
+  <p class="eyebrow">Work / 01—04</p>
+  <h1>Selected projects,<br>from idea to system.</h1>
+  <p>Projects exploring how perception, data, and physical systems can work together.</p>
+</section>
+<section class="shell project-list project-list--full">
+  {% for project in site.data.projects %}{% include project-row.html project=project %}{% endfor %}
+</section>
+<section class="section credentials shell reveal">
+  <p class="eyebrow">Credentials</p>
+  <div class="credential-grid">{% for item in site.data.credentials %}<p><span>0{{ forloop.index }}</span>{{ item }}</p>{% endfor %}</div>
+</section>

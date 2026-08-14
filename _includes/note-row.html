@@ -1,0 +1,6 @@
+{% assign note = include.note %}
+<a class="note-row" href="{{ note.url | relative_url }}">
+  <time datetime="{{ note.date | date_to_xmlschema }}">{{ note.date | date: "%Y.%m.%d" }}</time>
+  <div><h3>{{ note.title }}</h3><p>{{ note.description | default: note.excerpt | strip_html | truncate: 120 }}</p></div>
+  <span>↗</span>
+</a>

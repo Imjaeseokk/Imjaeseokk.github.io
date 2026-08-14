@@ -1,301 +1,48 @@
----
-repository: Imjaeseokk/Imjaeseokk.github.io
-version: 2
+title: "Jaeseok Heo — Engineer & Builder"
 name: Jaeseok Heo
-title: CVD Engineer at Samsung Electronics & BSc Student at Ajou Univ.
+description: "CVD engineer working at the intersection of semiconductor equipment, data, and computer vision."
+url: "https://imjaeseokk.github.io"
+baseurl: ""
+lang: en
+timezone: Asia/Seoul
 email: kakaokokoa9971@gmail.com
-website: https://imjaeseokk.github.io/
+github_username: Imjaeseokk
+linkedin_username: jaeseok-heo-8379ab237
+
 collections:
   readlog:
     output: true
-    permalink: /readlog/:title/
-navigation:
-  - text: About
-    url: /
-  - text: Readlog
-    url: /readlog/
-darkmode: true
-twitter_username: jaeseokk963
-github_username: Imjaeseokk
-instagram_username: jaeseokk963
-linkedin_username: jaeseok-heo-8379ab237
-additional_links:
-  - title: kaggle
-    icon: fab fa-brands fa-kaggle
-    url: https://www.kaggle.com/jaeseokk
-  - title: blog
-    icon: fab fa-brands fa-blogger
-    url: https://blog.naver.com/jaeseokk_
-  - title: tistory
-    icon: fas fa-t
-    url: https://iamseuki.tistory.com/
+    permalink: /notes/:name/
 
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-gtag: "G-T2MM9F6NQ4" # GA4 측정 ID
-# google_analytics: "UA-00000000-0" # Universal Analytics ID (GA4를 사용하는 경우 비활성화)
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: readlog
+    values:
+      layout: post
 
-about_profile_image: images/jaeseokk_copy.jpg
-about_content: >
-  Nice 2 Meet U! :)
-
-
-  I have a wide range of interests in **Computer Science**, including deep learning and reinforcement Learning.
-
-  I'm currently an <mark>equipment engineer</mark> working in the Memory CVD Technology Team at Samsung Electronics. 
-  
-  Concurrently, I'm an undergraduate at Ajou University majoring in integrative systems engineering.
-
-
-  As an equipment engineer, I optimize the hardware structure and conditions of CVD equipment.
-
-  Also, I analyze data from large-scale semiconductor fabs and build real-time monitoring systems.
-
-
-
-  In my undergraduate major, I'm studying 
-
-  - system optimization
-
-  - data analysis/mining
-
-  - computer vision 
-
-  - fundamental computer science courses including data structure and algorithms, and databases. 
-  
-
-# In my role, I'm responsible for developing a monitoring platform for anomaly detection and production status tracking
-    
-# through production data analysis, as well as optimizing the hardware structure and conditions of CVD equipments.
-
-
-
-#  Additionally, I'm learning computer architecture and operating systems through Coursera.
-
-  
-#  In high school, I studied 
-
-#  - digital logic circuits 
-
-#  - microcontroller Applications using ATmega and STM chip series. 
-
-
-
-#  This helped me understand the architecture and operation of computers.
-
-
-
-#   Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
-
-
-#   You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
-#     - Lists
-#     - Tables
-#     - <a href="google.com">Links</a>
-#     - Images ![alt text](/images/landscape-trees.jpg "Trees")
-content:
-  - title: Projects
-    layout: list
-    content:
-      # - layout: left
-      #   border: none
-      #   title: WTFPython Quiz
-      #   link: Link to project (http://jaeseokk963wtfpython.s3-website.ap-northeast-2.amazonaws.com/)(optional)
-      #   link_text: wtfpython-quiz
-      #   additional_links:
-      #     - title: Github page for project (https://github.com/Imjaeseokk/Homework/tree/main/wtfpython)
-      #       icon: fab fa-github
-      #       url: https://github.com/Imjaeseokk/Homework/tree/main/wtfpython
-      #   quote: |
-      #     This is my first Web Service Project!
-      #   description: >
-      #     "WTFPython Quiz" is a web-based quiz that challenges users to explore the unexpected and quirky 
-      #     behaviors of Python. Based on the popular [WTFPython project](https://github.com/satwikkansal/wtfpython), it helps developers of all levels understand 
-      #     Python's hidden intricacies by solving fun and educational questions. 
-      #     Through this quiz, users can test their Python knowledge and gain insights into the language’s 
-      #     surprising behavior, improving their coding skills and awareness of potential pitfalls.
-      - layout: left
-        border: solid
-        title: LABOR ROBOT
-        # link: Link to project (https://github.com/Imjaeseokk/Ajou-Computer_vision_and_robot_design)
-        # link_text: LABOR ROBOT
-        additional_links:
-          - title: LABOR ROBOT
-            icon: fab fa-github
-            url: Link to project (https://github.com/Imjaeseokk/Ajou-Computer_vision_and_robot_design)
-        quote: |
-          Team project in Computer Vision and Robot Design course in Ajou Univ
-        description: |
-          Hand gesture-based control system for service robots, utilizing TurtleBot3 and computer vision including Detectron2 and Mediapipe.
-
-      - layout: left
-        border: solid
-        title: DivetoVibe
-        # link: Link to project (https://github.com/Imjaeseokk/Ajou-Computer_vision_and_robot_design)
-        # link_text: LABOR ROBOT
-        additional_links:
-          - title: DivetoVibe
-            icon: fab fa-github
-            url: Link to project (https://github.com/Imjaeseokk/Ajou-Social_network_analysis/tree/main/Project)
-        quote: |
-          Team project in Social Network Analysis course in Ajou Univ
-        description: |
-          Music recommendation system utilizing sentiment analysis results of lyrics to suggest songs matching user emotions.
-
-
-      - layout: left
-        border: solid
-        title: RoboBarista
-        # link: Link to project (https://github.com/RoboBarista)
-        # link_text: RoboBarista
-        additional_links:
-          - title: RoboBarista
-            icon: fab fa-github
-            url: Link to project (https://github.com/RoboBarista)
-        quote: |
-          Paran semester team project in Ajou Univ
-        description: |
-          Developed a 6-axis coffee drip robot using ROS2 and computer vision for real-time control and precise object handling.
-          
-          Paran semester is a self-directed program where students design and execute projects to develop autonomy and create meaningful impact.
-
-      - layout: top
-        border: solid
-        title: "CV^2D: Monitoring System for Plasma in CVD Process using Computer Vision"
-        # link: Link to project (https://github.com/Pjshare/ajou_robobarista_robot)
-        # link_text: RoboBarista
-        # additional_links:
-        #   - title: Github page for project (eg. sproogen/modern-resume-theme)
-        #     icon: fab fa-github
-        #     url: Link to project (https://github.com/Pjshare/ajou_robobarista_robot)
-        quote: |
-          Research project in AI Expert coursework at Samsung Electronics - Seoul National University R&D Center
-        description: |
-          Monitoring system for plasma in the CVD process using CV, including image classification and image-based multivariable regression.
-  
-  
-  - title: Careers
-    layout: list
-    content:
-
-      - layout: top
-        title: Samsung Electronics Device Solution
-        sub_title: Memory Chemical Vapor Deposition Technology Team
-        caption: April 2018 - present
-        link: link to company(https://semiconductor.samsung.com/)
-        link_text: Link to company
-        quote: |
-#          quote
-        description: >
-#          Equipment Engineer
-
-      - layout: top
-        title: KEPCO
-        sub_title: Transmission and Substation Team
-        caption: July 2017 - August 2017
-        link: link to company(https://home.kepco.co.kr/kepco/EN/main.do)
-        link_text: Link to company
-        quote: |
-#          quote
-        description: >
-#          Intern (guaranteed full-time)
-
-
-  - title: Education
-    layout: list
-    content:
-      - layout: left
-        title: Samsung Electronics Seoul National University R&D Center
-        sub_title: AI Expert
-        caption: May 2024 - December 2024
-        quote: |
-#            Short institution or course description (optional)
-        description: >
-          Coursework in Artificial Intelligence includes topics such as
-          Algorithms, 
-
-          covering Natural Language Processing, Computer Vision, and Reinforcement Learning, 
-
-          as well as Systems, including Computer Architecture and Neural Network Accelerators.
-          
-      - layout: left
-        title: Ajou University
-        sub_title: Department of Integrative Systems Engineering
-        caption: March 2022 - present
-        quote: |
-#          quote
-        description: >
-          Bachelor's Degree
-            - Freshman 1st Semester *[Dean's List](https://www.ajou.ac.kr/eng/intro/dean-2021-2023.do)*
-            - Freshman 2nd Semester Dean's List
-            - Sophomore 1st Semester Dean's List
-            - Sophomore 2nd Semester Dean's List
-            - **Sophomore Highest Academic Achievement Award**
-
-
-#      - layout: left
-#        title: Coursera
-#        sub_title: Online Coursework
-#        description: >
-#          Courseworks
-#             - [Game Theory](https://www.coursera.org/learn/game-theory-1/home/welcome)
-             
-#         Degrees
-  - title: Certification
-    layout: list
-    content:
-      - layout: top
-        title: Engineer Information Processing
-        sub_title: Human Resources Development Service of Korea (HRDK)
-
-      - layout: top
-        title: Advanced Data Analytics Semi-Professional(ADsP)
-        sub_title: Korea Data Agency (K-DATA)
-
-      - layout: top
-        title: Data Science Certification
-        sub_title: Samsung Electronics Device Solution in-house certification
-        description: >
-            - **Advanced**
-      - layout: top
-        title: Software Certification
-        sub_title: Samsung Electronics Device Solution in-house certification
-        description: >
-            - **Advanced**
-
-  - title: A Little More About Me
-    layout: text
-    content: >
-      I have recently started learning Fencing🤺. 
-      
-
-      Also,I've recently gotten into Texas Hold'em ♠️.
-
-
-      I'm a big fan of football. I played as the captain and left forward on both my middle and high school football teams. 
-      Unfortunately, due to several knee injuries, I'm no longer able to play.
-      
-
-      I love learning about new fields and acquiring knowledge I didn't know before, constantly pushing myself to improve. Whenever I identify weaknesses or shortcomings, I strive to address them, aiming to grow a little every day.
-
-  
-
-    
-footer_show_references: true
-sass:
-  sass_dir: _sass
-  style: compressed
+permalink: pretty
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
+
+gtag: "G-T2MM9F6NQ4"
+
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - lib/
-  - scripts/
+  - vendor
+  - lib
+  - scripts
   - docker-compose.yml
+  - Procfile
+  - app.json
+  - modern-resume-theme.gemspec
+  - CONTRIBUTING.md
+  - CODE_OF_CONDUCT.md
+  - _test

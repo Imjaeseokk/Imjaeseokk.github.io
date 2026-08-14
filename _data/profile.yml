@@ -1,0 +1,24 @@
+eyebrow: Engineer / Student / Builder
+statement: I build systems at the intersection of semiconductor equipment, data, and computer vision.
+role: CVD Engineer at Samsung Electronics
+study: BSc Student at Ajou University
+location: South Korea
+portrait: /images/jaeseokk.jpg
+about: >-
+  I optimize hardware structures and process conditions for CVD equipment, analyze data from
+  large-scale semiconductor fabs, and build monitoring systems. Alongside my work, I study
+  integrative systems engineering with a focus on optimization, data, and computer vision.
+interests:
+  - Semiconductor equipment
+  - Computer vision
+  - Data analysis
+  - Robotics
+socials:
+  - label: GitHub
+    url: https://github.com/Imjaeseokk
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/jaeseok-heo-8379ab237
+  - label: Kaggle
+    url: https://www.kaggle.com/jaeseokk
+  - label: Tistory
+    url: https://iamseuki.tistory.com/

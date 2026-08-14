@@ -1,0 +1,6 @@
+{% assign project = include.project %}
+<article class="project-row reveal">
+  <span class="project-number">{{ project.number }}</span>
+  <div><h3>{{ project.title }}</h3><p class="project-subtitle">{{ project.subtitle }}</p><p class="project-description">{{ project.description }}</p></div>
+  <div class="project-side"><span>{{ project.context }}</span><div class="tags">{% for tag in project.tags %}<span>{{ tag }}</span>{% endfor %}</div>{% if project.url %}<a class="project-link" href="{{ project.url }}" target="_blank" rel="noreferrer" aria-label="Open {{ project.title }} project">↗</a>{% endif %}</div>
+</article>

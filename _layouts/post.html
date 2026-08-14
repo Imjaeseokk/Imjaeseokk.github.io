@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article class="post shell">
+  <a class="back-link" href="{{ '/notes/' | relative_url }}">← All notes</a>
+  <header class="post-header">
+    <p class="eyebrow">{{ page.category | default: 'Note' }}</p>
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% if page.reading_time %}<span>{{ page.reading_time }} min read</span>{% endif %}
+    </div>
+  </header>
+  <div class="prose">{{ content }}</div>
+</article>

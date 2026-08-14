@@ -1,0 +1,30 @@
+- number: "01"
+  title: "CV²D"
+  subtitle: Monitoring System for Plasma in CVD Process
+  description: Computer-vision monitoring for plasma processes, combining image classification and image-based multivariable regression.
+  context: Samsung Electronics · SNU R&D Center
+  tags: [Computer Vision, Semiconductor, AI]
+
+- number: "02"
+  title: RoboBarista
+  subtitle: Six-axis Coffee Drip Robot
+  description: A ROS2 and computer-vision system for real-time control and precise object handling in an autonomous coffee-drip workflow.
+  context: Ajou University · Paran Semester
+  url: https://github.com/RoboBarista
+  tags: [ROS2, Robotics, Computer Vision]
+
+- number: "03"
+  title: LABOR ROBOT
+  subtitle: Hand Gesture Service Robot
+  description: A gesture-based TurtleBot3 control system using Detectron2 and MediaPipe for natural human–robot interaction.
+  context: Ajou University · Team Project
+  url: https://github.com/Imjaeseokk/Ajou-Computer_vision_and_robot_design
+  tags: [TurtleBot3, Detectron2, MediaPipe]
+
+- number: "04"
+  title: DivetoVibe
+  subtitle: Emotion-aware Music Recommendation
+  description: A recommendation system that analyzes sentiment in lyrics and suggests music matching the listener's emotional state.
+  context: Ajou University · Team Project
+  url: https://github.com/Imjaeseokk/Ajou-Social_network_analysis/tree/main/Project
+  tags: [NLP, Recommendation, Network Analysis]
