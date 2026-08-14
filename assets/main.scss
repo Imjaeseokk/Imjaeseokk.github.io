@@ -98,6 +98,9 @@ main { padding-top:72px; }
 .footer-links a:hover { text-decoration:underline; text-underline-offset:3px; }
 .social-directory { display:grid!important; grid-template-columns:1fr 1fr; }
 .social-directory small { grid-column:1 / -1; }
+.icon-link { display:inline-flex; align-items:center; gap:8px; }
+.icon-link > i { width:12px; flex:0 0 12px; text-align:center; font-size:11px; font-style:normal; }
+.letter-icon { height:12px; display:inline-grid; place-items:center; border:1px solid currentColor; border-radius:50%; font-size:7px!important; font-weight:700; line-height:1; }
 .reveal { opacity:1; transform:none; }
 
 @media(max-width:760px){

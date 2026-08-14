@@ -16,15 +16,22 @@ interests:
 socials:
   - label: GitHub
     url: https://github.com/Imjaeseokk
+    icon: fa-brands fa-github
   - label: LinkedIn
     url: https://www.linkedin.com/in/jaeseok-heo-8379ab237
+    icon: fa-brands fa-linkedin-in
   - label: Instagram
     url: https://www.instagram.com/jaeseokk963
+    icon: fa-brands fa-instagram
   - label: X / Twitter
     url: https://twitter.com/jaeseokk963
+    icon: fa-brands fa-x-twitter
   - label: Kaggle
     url: https://www.kaggle.com/jaeseokk
+    icon: fa-brands fa-kaggle
   - label: Naver Blog
     url: https://blog.naver.com/jaeseokk_
+    mark: N
   - label: Tistory
     url: https://iamseuki.tistory.com/
+    mark: T
