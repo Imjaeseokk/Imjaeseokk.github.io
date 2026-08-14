@@ -4,8 +4,8 @@
     <p>Building useful systems across hardware and software.</p>
   </div>
   <div class="footer-links">
-    <div><small>CONTACT</small><a href="mailto:{{ site.email }}">Email</a><a href="https://github.com/{{ site.github_username }}">GitHub</a></div>
-    <div><small>ELSEWHERE</small><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a><a href="https://iamseuki.tistory.com/">Tistory</a></div>
+    <div><small>CONTACT</small><a href="mailto:{{ site.email }}">Email ↗</a></div>
+    <div class="social-directory"><small>SOCIAL & WRITING</small>{% for social in site.data.profile.socials %}<a href="{{ social.url }}" target="_blank" rel="noreferrer">{{ social.label }} ↗</a>{% endfor %}</div>
     <div><small>LOCAL TIME</small><span id="local-time">KST</span><span>© <span id="year">{{ 'now' | date: '%Y' }}</span></span></div>
   </div>
 </footer>
