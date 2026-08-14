@@ -1,15 +1,19 @@
 <header class="site-header">
-  <div class="shell nav-wrap">
-    <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Jaeseok Heo home">JH<span>.</span></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-      <span class="sr-only">Toggle navigation</span><span></span><span></span>
-    </button>
-    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-      <a href="{{ '/#about' | relative_url }}">About</a>
-      <a href="{{ '/work/' | relative_url }}"{% if page.url contains '/work' %} aria-current="page"{% endif %}>Work</a>
-      <a href="{{ '/notes/' | relative_url }}"{% if page.url contains '/notes' %} aria-current="page"{% endif %}>Notes</a>
-      <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noreferrer">GitHub ↗</a>
-      <button class="theme-toggle" type="button" aria-label="Toggle color theme"><span aria-hidden="true">◐</span></button>
-    </nav>
-  </div>
+  <a class="brand" href="{{ '/' | relative_url }}" aria-label="Jaeseok Heo home">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span>JAESEOK HEO</span>
+  </a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+    <span class="sr-only">Toggle navigation</span><span></span><span></span>
+  </button>
+  <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+    <a href="{{ '/' | relative_url }}">Index</a>
+    <a href="{{ '/work/' | relative_url }}"{% if page.url contains '/work' %} aria-current="page"{% endif %}>Work</a>
+    <a href="{{ '/notes/' | relative_url }}"{% if page.url contains '/notes' %} aria-current="page"{% endif %}>Notes</a>
+    <button class="theme-toggle" type="button" aria-label="Toggle color theme">◐</button>
+  </nav>
 </header>
+<aside class="side-rail" aria-hidden="true">
+  <span>JH</span>
+  <span>ENGINEER · STUDENT · BUILDER</span>
+</aside>
