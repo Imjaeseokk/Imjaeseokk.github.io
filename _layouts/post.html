@@ -1,10 +1,19 @@
 ---
 layout: default
 ---
+{% if page.collection == 'reads' %}
+  {% assign archive_url = '/read/' %}
+  {% assign archive_label = 'All reads' %}
+  {% assign default_category = 'Read' %}
+{% else %}
+  {% assign archive_url = '/notes/' %}
+  {% assign archive_label = 'All notes' %}
+  {% assign default_category = 'Note' %}
+{% endif %}
 <article class="post shell">
-  <a class="back-link" href="{{ '/notes/' | relative_url }}">← All notes</a>
+  <a class="back-link" href="{{ archive_url | relative_url }}">← {{ archive_label }}</a>
   <header class="post-header">
-    <p class="eyebrow">{{ page.category | default: 'Note' }}</p>
+    <p class="eyebrow">{{ page.category | default: default_category }}</p>
     <h1>{{ page.title }}</h1>
     <div class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>

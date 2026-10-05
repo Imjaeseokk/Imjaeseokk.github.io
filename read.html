@@ -1,0 +1,14 @@
+---
+title: Read
+permalink: /read/
+description: Essays and long-form writing by Jaeseok Heo.
+---
+<section class="page-intro shell reveal">
+  <p class="eyebrow">Read / Essays</p>
+  <h1>Writing worth<br>a longer read.</h1>
+  <p>Essays on engineering, technology, projects, and the ideas behind them.</p>
+</section>
+<section class="shell notes-index reveal">
+  {% assign reads = site.reads | where_exp: 'article', 'article.published != false' | sort: 'date' | reverse %}
+  {% if reads.size > 0 %}{% for article in reads %}{% include note-row.html note=article %}{% endfor %}{% else %}<div class="empty-state"><p>No published reads yet.</p><span>Long-form writing will live here.</span></div>{% endif %}
+</section>

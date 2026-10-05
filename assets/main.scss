@@ -19,7 +19,7 @@ button { color:inherit; font:inherit; }
 .site-header { position:fixed; z-index:20; top:0; right:0; left:var(--rail); height:72px; padding:0 var(--pad); display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line); background:color-mix(in srgb,var(--bg) 92%,transparent); backdrop-filter:blur(10px); }
 .brand { display:flex; align-items:center; gap:11px; font-size:10px; font-weight:700; letter-spacing:.14em; }
 .site-nav { display:flex; align-items:center; gap:28px; font-size:10px; text-transform:uppercase; letter-spacing:.1em; }
-.site-nav a,.site-nav .nav-placeholder { color:var(--muted); }
+.site-nav a { color:var(--muted); }
 .site-nav a:hover,.site-nav a[aria-current="page"] { color:var(--text); }
 .theme-toggle { padding:0; border:0; background:none; cursor:pointer; }
 .menu-toggle { display:none; }
