@@ -42,7 +42,7 @@ description: CVD engineer, systems engineering student, and builder working with
 </section>
 
 <section class="index-section">
-  <header class="index-heading"><div><span>03</span><h2>Notes</h2></div><p>Things I learn, kept in writing.</p></header>
+  <header class="index-heading"><div><span>03</span><h2>Notes</h2></div><p>Notes.</p></header>
   <div class="compact-list">
     {% assign notes = site.readlog | where_exp: 'note', 'note.published != false' | sort: 'date' | reverse %}
     {% if notes.size > 0 %}{% for note in notes limit:4 %}{% include note-row.html note=note %}{% endfor %}{% else %}<div class="empty-state"><p>Notes are being prepared.</p><span>Writing on engineering, data, and learning will live here.</span></div>{% endif %}
