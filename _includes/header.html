@@ -10,7 +10,7 @@
     <a href="{{ '/' | relative_url }}">Index</a>
     <a href="{{ '/work/' | relative_url }}"{% if page.url contains '/work' %} aria-current="page"{% endif %}>Work</a>
     <a href="{{ '/notes/' | relative_url }}"{% if page.url contains '/notes' %} aria-current="page"{% endif %}>Notes</a>
-    <span class="nav-placeholder" aria-disabled="true">Read</span>
+    <a href="{{ '/read/' | relative_url }}"{% if page.url contains '/read' %} aria-current="page"{% endif %}>Read</a>
     <button class="theme-toggle" type="button" aria-label="Toggle color theme">◐</button>
   </nav>
 </header>

@@ -13,6 +13,9 @@ collections:
   readlog:
     output: true
     permalink: /notes/:name/
+  reads:
+    output: true
+    permalink: /read/:name/
 
 defaults:
   - scope:
@@ -22,6 +25,11 @@ defaults:
   - scope:
       path: ""
       type: readlog
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: reads
     values:
       layout: post
 
