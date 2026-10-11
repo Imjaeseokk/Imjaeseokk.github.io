@@ -1,8 +1,9 @@
-<!-- _readlog/example-entry.md -->
 ---
-title: "Example Entry"
-date: 2023-07-10
+title: "Example Readlog Entry"
+date: 2026-10-05
+media_type: 아티클
+description: "A hidden template for books, videos, columns, articles, and news."
 published: false
 ---
 
-This is an example entry for the readlog collection.
+Write a summary, memorable points, and your thoughts here.

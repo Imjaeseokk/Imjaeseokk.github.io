@@ -1,14 +1,12 @@
 ---
-title: Read
+layout: default
+title: Readlog
 permalink: /read/
-description: Essays and long-form writing by Jaeseok Heo.
+sitemap: false
 ---
-<section class="page-intro shell reveal">
-  <p class="eyebrow">Read / Essays</p>
-  <h1>Writing worth<br>a longer read.</h1>
-  <p>Essays on engineering, technology, projects, and the ideas behind them.</p>
+<section class="page-intro shell">
+  <p class="eyebrow">Read moved</p>
+  <h1>Read is now Readlog.</h1>
+  <p><a class="text-link" href="{{ '/readlog/' | relative_url }}">Continue to Readlog ↗</a></p>
 </section>
-<section class="shell notes-index reveal">
-  {% assign reads = site.reads | where_exp: 'article', 'article.published != false' | sort: 'date' | reverse %}
-  {% if reads.size > 0 %}{% for article in reads %}{% include note-row.html note=article %}{% endfor %}{% else %}<div class="empty-state"><p>No published reads yet.</p><span>Long-form writing will live here.</span></div>{% endif %}
-</section>
+<script>window.location.replace({{ '/readlog/' | relative_url | jsonify }});</script>

@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-{% if page.collection == 'reads' %}
-  {% assign archive_url = '/read/' %}
-  {% assign archive_label = 'All reads' %}
-  {% assign default_category = 'Read' %}
+{% if page.collection == 'readlog' %}
+  {% assign archive_url = '/readlog/' %}
+  {% assign archive_label = 'All readlog entries' %}
+  {% assign default_category = page.media_type | default: 'Readlog' %}
 {% else %}
   {% assign archive_url = '/notes/' %}
   {% assign archive_label = 'All notes' %}
@@ -17,6 +17,7 @@ layout: default
     <h1>{{ page.title }}</h1>
     <div class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% if page.media_type %}<span>{{ page.media_type }}</span>{% endif %}
       {% if page.reading_time %}<span>{{ page.reading_time }} min read</span>{% endif %}
     </div>
   </header>

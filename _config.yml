@@ -10,12 +10,12 @@ github_username: Imjaeseokk
 linkedin_username: jaeseok-heo-8379ab237
 
 collections:
-  readlog:
+  notes:
     output: true
     permalink: /notes/:name/
-  reads:
+  readlog:
     output: true
-    permalink: /read/:name/
+    permalink: /readlog/:name/
 
 defaults:
   - scope:
@@ -24,12 +24,12 @@ defaults:
       layout: default
   - scope:
       path: ""
-      type: readlog
+      type: notes
     values:
       layout: post
   - scope:
       path: ""
-      type: reads
+      type: readlog
     values:
       layout: post
 

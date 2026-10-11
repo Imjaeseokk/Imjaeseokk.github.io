@@ -9,6 +9,6 @@ description: Notes on engineering, computer vision, data, and continuous learnin
   <p>Short notes on engineering, computer science, and ideas worth remembering.</p>
 </section>
 <section class="shell notes-index reveal">
-  {% assign notes = site.readlog | where_exp: 'note', 'note.published != false' | sort: 'date' | reverse %}
+  {% assign notes = site.notes | where_exp: 'note', 'note.published != false' | sort: 'date' | reverse %}
   {% if notes.size > 0 %}{% for note in notes %}{% include note-row.html note=note %}{% endfor %}{% else %}<div class="empty-state"><p>No published notes yet.</p><span>Check back soon.</span></div>{% endif %}
 </section>

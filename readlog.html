@@ -1,12 +1,14 @@
 ---
-layout: default
 title: Readlog
 permalink: /readlog/
-sitemap: false
+description: Books, videos, columns, articles, and news worth remembering.
 ---
-<section class="page-intro shell">
-  <p class="eyebrow">Readlog moved</p>
-  <h1>Readlog is now Notes.</h1>
-  <p><a class="text-link" href="{{ '/notes/' | relative_url }}">Continue to Notes ↗</a></p>
+<section class="page-intro shell reveal">
+  <p class="eyebrow">Readlog</p>
+  <h1>Things consumed,<br>thoughts retained.</h1>
+  <p>Notes and reflections on books, YouTube videos, columns, articles, and news.</p>
 </section>
-<script>window.location.replace({{ '/notes/' | relative_url | jsonify }});</script>
+<section class="shell notes-index reveal">
+  {% assign entries = site.readlog | where_exp: 'entry', 'entry.published != false' | sort: 'date' | reverse %}
+  {% if entries.size > 0 %}{% for entry in entries %}{% include note-row.html note=entry %}{% endfor %}{% else %}<div class="empty-state"><p>No readlog entries yet.</p><span>Books, videos, columns, articles, and news will live here.</span></div>{% endif %}
+</section>
