@@ -20,11 +20,8 @@ button { color:inherit; font:inherit; }
 .site-nav a:hover,.site-nav a[aria-current="page"] { color:var(--text); }
 .header-right,.header-actions { display:flex; align-items:center; gap:24px; }
 .header-actions { gap:14px; }
-.theme-toggle,.language-toggle { width:28px; height:28px; padding:0; border:0; background:none; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; }
-.theme-toggle:focus-visible,.language-toggle:focus-visible { outline:1px solid var(--text); outline-offset:4px; }
-.language-icon-ko { display:none; }
-html[data-ui-lang="en"] .language-icon-en { display:none; }
-html[data-ui-lang="en"] .language-icon-ko { display:block; }
+.theme-toggle { width:28px; height:28px; padding:0; border:0; background:none; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; }
+.theme-toggle:focus-visible { outline:1px solid var(--text); outline-offset:4px; }
 .menu-toggle { display:none; }
 main { padding-top:72px; }
 
