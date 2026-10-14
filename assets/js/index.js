@@ -1,4 +1,7 @@
 const root = document.documentElement;
+document.querySelectorAll('.prose code').forEach((code) => {
+  if (!code.closest('pre') && /[가-힣]/.test(code.textContent)) code.classList.add('prose-word');
+});
 const themeToggle = document.querySelector('.theme-toggle');
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.site-nav');

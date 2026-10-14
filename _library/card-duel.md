@@ -1,5 +1,5 @@
 ---
-title: Card Duel
+title: Headsup
 category: ui-components
 description: For fun — 결정하기 어려운 두 선택지, 더 높은 카드에게 맡깁니다.
 ---

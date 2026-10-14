@@ -18,7 +18,7 @@ layout: default
     <div class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
       {% if page.media_type %}<span>{{ page.media_type }}</span>{% endif %}
-      {% if page.reading_time %}<span>{{ page.reading_time }} min read</span>{% endif %}
+      {% if page.reading_time %}<span class="reading-time">{{ page.reading_time }} min read</span>{% endif %}
     </div>
   </header>
   <div class="prose">{{ content }}</div>
