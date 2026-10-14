@@ -19,7 +19,7 @@ layout: default
     </article>
     {% endfor %}
   {% else %}
-    {% assign inline_content = content | strip %}
+    {% assign inline_content = content | strip_html | strip %}
     {% if inline_content == '' %}
     <div class="empty-state"><p>No references yet.</p><span>{{ page.description }}</span></div>
     {% endif %}
