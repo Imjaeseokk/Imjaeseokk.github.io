@@ -6,7 +6,6 @@ description: Books, videos, columns, articles, and news worth remembering.
 <section class="page-intro shell reveal">
   <p class="eyebrow">Readlog</p>
   <h1 lang="ko">읽고 보고 느낀 점을 적어봅니다<br>생각이 다를 수 있습니다</h1>
-  <p>Notes and reflections on books, YouTube videos, columns, articles, and news.</p>
 </section>
 <section class="shell notes-index reveal">
   {% assign entries = site.readlog | where_exp: 'entry', 'entry.published != false' | sort: 'date' | reverse %}

@@ -1,7 +1,4 @@
 <footer class="site-footer">
-  <div class="footer-intro">
-    <span class="brand-mark" aria-hidden="true"></span>
-  </div>
   <div class="footer-links">
     <div><small>CONTACT</small><a class="icon-link" href="mailto:{{ site.email }}"><i class="fa-regular fa-envelope" aria-hidden="true"></i><span>Email ↗</span></a></div>
     <div class="social-directory"><small>SOCIAL & WRITING</small>{% for social in site.data.profile.socials %}<a class="icon-link" href="{{ social.url }}" target="_blank" rel="noreferrer">{% if social.icon %}<i class="{{ social.icon }}" aria-hidden="true"></i>{% else %}<i class="letter-icon" aria-hidden="true">{{ social.mark }}</i>{% endif %}<span>{{ social.label }} ↗</span></a>{% endfor %}</div>
