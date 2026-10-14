@@ -1,17 +1,25 @@
 ---
 title: Work
 permalink: /work/
-description: Selected projects by Jaeseok Heo in computer vision, robotics, semiconductor engineering, and data.
+description: Experience, education, projects, and certificates of Jaeseok Heo.
 ---
 <section class="page-intro shell reveal">
-  <p class="eyebrow">Work / 01—04</p>
-  <h1>Selected projects,<br>from idea to system.</h1>
-  <p>Projects exploring how perception, data, and physical systems can work together.</p>
+  <p class="eyebrow">Work</p>
+  <h1>Work</h1>
 </section>
-<section class="shell project-list project-list--full">
+<section id="experience" class="index-section reveal">
+  <header class="index-heading"><h2>Experience</h2></header>
+  {% for item in site.data.experience %}<article class="plain-item"><time>{{ item.period }}</time><h3>{{ item.organization }}</h3><p>{{ item.role }}</p><small>{{ item.detail }}</small></article>{% endfor %}
+</section>
+<section id="education" class="index-section reveal">
+  <header class="index-heading"><h2>Education</h2></header>
+  {% for item in site.data.education %}<article class="plain-item"><time>{{ item.period }}</time><h3>{{ item.organization }}</h3><p>{{ item.program }}</p><small>{{ item.detail }}</small></article>{% endfor %}
+</section>
+<section id="projects" class="index-section reveal">
+  <header class="index-heading"><h2>Projects</h2></header>
   {% for project in site.data.projects %}{% include project-row.html project=project %}{% endfor %}
 </section>
-<section class="section credentials shell reveal">
-  <p class="eyebrow">Credentials</p>
+<section id="certificates" class="index-section reveal">
+  <header class="index-heading"><h2>Certificates</h2></header>
   <div class="credential-grid">{% for item in site.data.credentials %}<p><span>0{{ forloop.index }}</span>{{ item }}</p>{% endfor %}</div>
 </section>

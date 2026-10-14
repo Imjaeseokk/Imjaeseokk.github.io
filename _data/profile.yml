@@ -5,10 +5,13 @@ education: Ajou University · BSc
 graduation: Graduated Fall 2025
 location: South Korea
 portrait: /images/jaeseokk.jpg
-about: >-
-  I work on MLOps and data analysis at Samsung Electronics, building on my experience with
-  semiconductor equipment and monitoring systems. I graduated from Ajou University in
-  Fall 2025 with a BSc in Integrative Systems Engineering.
+about:
+  ko: >-
+    삼성전자에서 MLOps를 합니다. 더 효율적이고 합리적인 방법을 찾으며,
+    흥미롭고 유용한 웹 프로젝트를 만들고 UI/UX와 디자인을 배웁니다.
+  en: >-
+    I work on MLOps at Samsung Electronics. I look for more efficient, thoughtful ways
+    to do things, build interesting and useful web projects, and explore UI/UX and design.
 interests:
   - Semiconductor equipment
   - Computer vision

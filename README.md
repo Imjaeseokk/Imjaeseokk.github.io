@@ -7,8 +7,10 @@ The site uses Jekyll only for layouts, data, and Markdown collections. The inter
 ## Content
 
 - Profile: `_data/profile.yml`
+- Home introduction: `_data/profile.yml` → `about.ko` / `about.en`. Home currently uses `lang: ko`; the language switcher is not implemented yet.
 - Projects: `_data/projects.yml`
 - Experience and education: `_data/experience.yml`, `_data/education.yml`
+- Work contains Experience, Education, Projects, and Certificates (`_data/credentials.yml`). Home keeps project previews.
 - Notes: `_notes/*.md`
 - Library: `_library/*.md` or `_library/*.html` with `category` set to `fonts`, `colors`, `ui-components`, or `commands`. Entries render in full inside their category page. Command entries can also specify `system` (Git, tmux, Linux, CMD, or PowerShell).
 - Readlog: `_readlog/*.md` (`media_type` identifies 책, 유튜브, 칼럼, 아티클, 뉴스, etc.)

@@ -1,5 +1,6 @@
 ---
 title: Jaeseok Heo
+lang: ko
 description: MLOps engineer at Samsung Electronics and Ajou University graduate working with semiconductor systems, data, and computer vision.
 ---
 {% assign profile = site.data.profile %}
@@ -7,7 +8,7 @@ description: MLOps engineer at Samsung Electronics and Ajou University graduate 
   <div class="intro-copy">
     <p class="kicker">ENGINEER · BUILDER</p>
     <h1>Building useful<br>systems with<br>hardware & data.</h1>
-    <p class="intro-deck">{{ profile.about }}</p>
+    <p class="intro-deck">{{ profile.about[page.lang] | default: profile.about.en }}</p>
   </div>
   <div class="intro-facts">
     <div><small>CURRENTLY</small><p>{{ profile.role }}</p></div>
@@ -18,7 +19,7 @@ description: MLOps engineer at Samsung Electronics and Ajou University graduate 
 
 
 <section class="index-section">
-  <header class="index-heading"><div><span>01</span><h2>Selected Work</h2></div><p>Projects connecting perception, data, and physical systems.</p></header>
+  <header class="index-heading"><h2>Selected Work</h2></header>
   <div class="compact-list">
     {% for project in site.data.projects %}
       <a class="compact-row" href="{{ project.url | default: '/work/' }}">
@@ -28,22 +29,8 @@ description: MLOps engineer at Samsung Electronics and Ajou University graduate 
   </div>
 </section>
 
-<section id="about" class="index-section split-section">
-  <header class="index-heading"><div><span>02</span><h2>Experience</h2></div><p>Working where semiconductor equipment and software meet.</p></header>
-  <div class="split-grid">
-    <div>
-      <p class="kicker">EXPERIENCE</p>
-      {% for item in site.data.experience %}<article class="plain-item"><time>{{ item.period }}</time><h3>{{ item.organization }}</h3><p>{{ item.role }}</p><small>{{ item.detail }}</small></article>{% endfor %}
-    </div>
-    <div>
-      <p class="kicker">EDUCATION</p>
-      {% for item in site.data.education %}<article class="plain-item"><time>{{ item.period }}</time><h3>{{ item.organization }}</h3><p>{{ item.program }}</p><small>{{ item.detail }}</small></article>{% endfor %}
-    </div>
-  </div>
-</section>
-
 <section class="index-section">
-  <header class="index-heading"><div><span>03</span><h2>Notes</h2></div><p>Notes.</p></header>
+  <header class="index-heading"><h2>Notes</h2></header>
   <div class="compact-list">
     {% assign notes = site.notes | where_exp: 'note', 'note.published != false' | sort: 'date' | reverse %}
     {% if notes.size > 0 %}{% for note in notes limit:4 %}{% include note-row.html note=note %}{% endfor %}{% else %}<div class="empty-state"><p>Notes are being prepared.</p><span>Writing on engineering, data, and learning will live here.</span></div>{% endif %}
@@ -51,7 +38,7 @@ description: MLOps engineer at Samsung Electronics and Ajou University graduate 
 </section>
 
 <section class="index-section">
-  <header class="index-heading"><div><span>04</span><h2>Library</h2></div><p>Personal references ready to reuse.</p></header>
+  <header class="index-heading"><h2>Library</h2></header>
   <div class="compact-list">
     {% for category in site.data.library_categories %}
       <a class="compact-row" href="{{ '/library/' | append: category.slug | append: '/' | relative_url }}">
