@@ -26,7 +26,7 @@ class CardDuel extends HTMLElement {
         .cards { display:none; position:absolute; inset:0; grid-template-columns:1fr 1fr; overflow:hidden; border-radius:6px; }
         .cell { display:block; position:relative; overflow:hidden; font-size:17px; font-weight:400; }
         .reel { display:block; will-change:transform; }
-        .face { height:38px; display:flex; align-items:center; justify-content:center; gap:5px; }
+        .face { height:var(--reel-height,36px); display:flex; align-items:center; justify-content:center; gap:5px; }
         .rank { font-family:var(--font-mono,"Monoplex KR",monospace); }
         .cell + .cell { border-left:1px solid var(--line,#ddd); }
         .suit { font-size:12px; } .red { color:#c44444; }
@@ -65,6 +65,7 @@ class CardDuel extends HTMLElement {
         const values = drawRanks();
         const winner = values[0] > values[1] ? 0 : 1;
         await Promise.all(cells.map(async (cell, index) => {
+          cell.style.setProperty('--reel-height', `${button.clientHeight}px`);
           if (reduced) { cell.innerHTML = face(values[index]); return; }
           const faces = Array.from({ length:22 }, () => face(Math.floor(Math.random() * 13)));
           faces.push(face(values[index]));
