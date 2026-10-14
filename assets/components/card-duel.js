@@ -18,7 +18,7 @@ class CardDuel extends HTMLElement {
       <style>
         :host { display:inline-block; vertical-align:middle; }
         * { box-sizing:border-box; }
-        button { position:relative; display:inline-flex; align-items:center; justify-content:center; width:132px; height:38px; padding:0 14px; border:1px solid var(--line,#deded9); border-radius:7px; background:var(--bg,#fff); color:var(--text,#171717); font:400 13px/1 var(--font-sans,"Pretendard Variable",sans-serif); cursor:pointer; box-shadow:0 1px 2px #00000006; transition:background .15s; }
+        button { position:relative; display:inline-flex; align-items:center; justify-content:center; width:132px; height:38px; padding:0 14px; border:1px solid var(--line,#deded9); border-radius:7px; background:var(--bg,#fff); color:var(--text,#171717); font:500 14px/1 "Geist Variable","Pretendard Variable",sans-serif; cursor:pointer; box-shadow:0 1px 2px #00000006; transition:background .15s; }
         button:hover:not(:disabled) { background:var(--soft,#f4f4f4); }
         button:focus-visible { outline:2px solid currentColor; outline-offset:4px; }
         button:disabled { cursor:wait; }
@@ -51,10 +51,13 @@ class CardDuel extends HTMLElement {
       return `<span class="face"><span class="rank">${ranks[rank]}</span><span class="suit${suit === 1 || suit === 3 ? ' red' : ''}">${suits[suit]}</span></span>`;
     };
     const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+    let resetTimer;
+    this.clearResultTimer = () => clearTimeout(resetTimer);
     let busy = false;
     button.addEventListener('click', async () => {
       if (busy) return;
       busy = true;
+      clearTimeout(resetTimer);
       button.disabled = true;
       button.setAttribute('aria-busy', 'true');
       button.dataset.phase = 'rolling';
@@ -89,6 +92,12 @@ class CardDuel extends HTMLElement {
           detail: { choice: labels[winner], winner, ranks: values.map((value) => ranks[value]), mode: volume ? 'volume' : 'reaction' },
           bubbles: true, composed: true
         }));
+        resetTimer = setTimeout(() => {
+          if (!this.isConnected || busy) return;
+          shadow.querySelector('.text').textContent = initial;
+          button.dataset.phase = 'idle';
+          button.removeAttribute('aria-label');
+        }, 1800);
       } finally {
         busy = false;
         button.disabled = false;
@@ -97,6 +106,7 @@ class CardDuel extends HTMLElement {
       }
     });
   }
+  disconnectedCallback() { this.clearResultTimer?.(); }
 }
 
 if (!customElements.get('card-duel')) customElements.define('card-duel', CardDuel);

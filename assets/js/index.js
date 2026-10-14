@@ -50,20 +50,35 @@ updateClock();
 setInterval(updateClock, 60000);
 
 // Keep code and colors selectable when clipboard permission is unavailable.
+const copyIcons = {
+  copy: '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="5" width="12" height="16" rx="2"/><path d="M9 5V3h6v2M9 3h6"/></svg>',
+  check: '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>',
+  error: '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v7m0 3v2"/></svg>'
+};
+const setCopyIcon = (button, state, label) => {
+  button.innerHTML = copyIcons[state] + '<span class="sr-only">' + label + '</span>';
+  button.setAttribute('aria-label', label);
+  button.title = label;
+};
 const copyReference = async (button, value) => {
   const originalLabel = button.dataset.copyLabel || button.textContent;
   button.dataset.copyLabel = originalLabel;
   try {
     await navigator.clipboard.writeText(value);
-    button.textContent = 'Copied!';
+    if (button.classList.contains('copy-icon')) setCopyIcon(button, 'check', 'Copied');
+    else button.textContent = 'Copied!';
   } catch {
-    button.textContent = 'Copy failed — select manually';
+    if (button.classList.contains('copy-icon')) setCopyIcon(button, 'error', 'Copy failed — select manually');
+    else button.textContent = 'Copy failed — select manually';
   }
   clearTimeout(button.copyFeedbackTimer);
-  button.copyFeedbackTimer = setTimeout(() => { button.textContent = originalLabel; }, 2200);
+  button.copyFeedbackTimer = setTimeout(() => {
+    if (button.classList.contains('copy-icon')) setCopyIcon(button, 'copy', 'Copy code');
+    else button.textContent = originalLabel;
+  }, 1800);
 };
 
-document.querySelectorAll('.library-content pre').forEach((pre) => {
+document.querySelectorAll('.prose pre').forEach((pre) => {
   const code = pre.querySelector('code');
   const wrapper = document.createElement('div');
   wrapper.className = 'code-copy-block';
@@ -71,8 +86,8 @@ document.querySelectorAll('.library-content pre').forEach((pre) => {
   wrapper.append(pre);
   const button = document.createElement('button');
   button.type = 'button';
-  button.className = 'copy-button';
-  button.textContent = 'Copy code';
+  button.className = 'copy-button copy-icon';
+  setCopyIcon(button, 'copy', 'Copy code');
   button.setAttribute('aria-live', 'polite');
   button.addEventListener('click', () => copyReference(button, (code || pre).textContent));
   wrapper.append(button);

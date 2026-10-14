@@ -105,10 +105,22 @@ main { padding-top:72px; }
 .reference-preview { margin:24px 0; padding:24px; border:1px solid var(--line); overflow:auto; }
 .reference-card .prose { max-width:100%; }
 .code-copy-block { position:relative; margin:24px 0; }
-.code-copy-block pre { margin:0; padding:54px 20px 20px; overflow:auto; background:var(--soft); font-size:13px; }
+.code-copy-block pre { margin:0; padding:18px 46px 18px 18px; overflow:auto; background:var(--soft); font-size:13px; line-height:1.6; border-radius:7px; }
 .copy-button { padding:7px 12px; border:1px solid var(--line); background:var(--bg); cursor:pointer; font-size:12px; }
 .code-copy-block > .copy-button { position:absolute; top:10px; right:10px; }
 .copy-button:focus-visible { outline:2px solid var(--text); outline-offset:3px; }
+.copy-button.copy-icon { display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; padding:0; background:transparent; border:0; color:var(--muted); }
+.copy-button.copy-icon:hover { color:var(--text); background:var(--bg); }
+.code-copy-block code { font-size:inherit; }
+.highlight .k,.highlight .kd,.highlight .kn,.highlight .kp,.highlight .kr,.highlight .kt,.highlight .o,.highlight .ow { color:#e12c48; }
+.highlight .s,.highlight .s1,.highlight .s2,.highlight .sb,.highlight .sc,.highlight .sd,.highlight .se,.highlight .sh,.highlight .si,.highlight .sx,.highlight .nt { color:#0057b8; }
+.highlight .na,.highlight .nf,.highlight .nc,.highlight .nd { color:#7c3aed; }
+.highlight .m,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo,.highlight .il { color:#087f5b; }
+.highlight .c,.highlight .c1,.highlight .cm,.highlight .cp,.highlight .cs { color:#777; }
+html[data-theme="dark"] .highlight .k,html[data-theme="dark"] .highlight .kd,html[data-theme="dark"] .highlight .kn,html[data-theme="dark"] .highlight .o { color:#ff7b90; }
+html[data-theme="dark"] .highlight .s,html[data-theme="dark"] .highlight .s1,html[data-theme="dark"] .highlight .s2,html[data-theme="dark"] .highlight .nt { color:#86bfff; }
+html[data-theme="dark"] .highlight .na,html[data-theme="dark"] .highlight .nf,html[data-theme="dark"] .highlight .nc { color:#c3a2ff; }
+html[data-theme="dark"] .highlight .m,html[data-theme="dark"] .highlight .mi { color:#6eddb8; }
 
 .site-footer { padding:70px var(--pad) 50px; display:grid; grid-template-columns:1fr 1.5fr; gap:8vw; border-top:1px solid var(--line); }
 .footer-intro { display:flex; gap:20px; align-items:flex-start; }
