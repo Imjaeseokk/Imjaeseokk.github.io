@@ -1,0 +1,106 @@
+<card-duel></card-duel>
+<script>
+(() => {
+  if (customElements.get('card-duel')) return;
+  const ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
+  const suits = ['♠', '♥', '♣', '♦'];
+  class CardDuel extends HTMLElement {
+    connectedCallback() {
+      if (this.shadowRoot) return;
+      const shadow = this.attachShadow({ mode: 'open' });
+      shadow.innerHTML = `
+        <style>
+          :host { display:block; color:var(--text,#171717); font:14px/1.5 system-ui,sans-serif; }
+          * { box-sizing:border-box; } button,select { font:inherit; color:inherit; }
+          .demo { max-width:580px; margin:auto; padding:28px 0; }
+          .toolbar { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:32px; }
+          .label { color:var(--muted,#777); font-size:11px; letter-spacing:.12em; }
+          select { max-width:65%; background:var(--bg,#fff); border:1px solid var(--line,#ddd); border-radius:6px; padding:6px 10px; }
+          .arena { display:grid; grid-template-columns:minmax(0,1fr) 30px minmax(0,1fr); align-items:center; gap:12px; }
+          .side { display:flex; flex-direction:column; align-items:center; gap:20px; min-width:0; }
+          .card { width:94px; height:132px; border:1px solid var(--line,#ddd); border-radius:10px; background:var(--bg,#fff); display:flex; flex-direction:column; justify-content:space-between; padding:10px 12px; box-shadow:0 4px 12px #00000009; transition:transform .25s,border-color .25s; }
+          .rank { font-size:24px; font-weight:600; line-height:1; } .suit { font-size:30px; align-self:center; }
+          .bottom { align-self:flex-end; transform:rotate(180deg); }
+          .card[data-red="true"] { color:#c44444; } .card[data-red="false"] { color:var(--text,#171717); }
+          .side[data-winner="true"] .card { transform:translateY(-8px) rotate(-4deg); border-color:currentColor; box-shadow:0 8px 22px #00000014; }
+          .side[data-winner="false"] .card { opacity:.45; }
+          .choice,.deal { background:var(--bg,#fff); border:1px solid var(--line,#ddd); border-radius:6px; padding:9px 14px; cursor:pointer; font-weight:500; }
+          .choice { width:100%; min-height:42px; } .choice[aria-pressed="true"],.deal { background:var(--text,#171717); color:var(--bg,#fff); border-color:var(--text,#171717); }
+          button:hover:not(:disabled) { filter:brightness(.92); } button:focus-visible,select:focus-visible { outline:2px solid currentColor; outline-offset:4px; }
+          button:disabled { cursor:wait; } .versus { color:var(--muted,#777); font-size:11px; text-align:center; }
+          .actions { display:flex; justify-content:center; margin-top:30px; }
+          .status { min-height:44px; margin:18px 0 0; text-align:center; color:var(--muted,#777); font-size:12px; }
+          @media(max-width:420px) { .arena { gap:6px; grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr); } .card { width:70px; height:104px; } .choice { padding:9px 5px; font-size:12px; } .toolbar { flex-wrap:wrap; } }
+          @media(prefers-reduced-motion:reduce) { .card { transition:none; } }
+        </style>
+        <div class="demo">
+          <div class="toolbar"><span class="label">CARD DUEL / FOR FUN</span><select aria-label="선택할 항목"><option value="reaction">좋아요 / 싫어요</option><option value="volume">볼륨 올리기 / 내리기</option></select></div>
+          <div class="arena">
+            <div class="side"><div class="card" aria-hidden="true"><span class="rank">?</span><span class="suit">♠</span><span class="rank bottom">?</span></div><button type="button" class="choice" aria-pressed="false">좋아요</button></div>
+            <span class="versus">VS</span>
+            <div class="side"><div class="card" aria-hidden="true"><span class="rank">?</span><span class="suit">♥</span><span class="rank bottom">?</span></div><button type="button" class="choice" aria-pressed="false">싫어요</button></div>
+          </div>
+          <div class="actions"><button type="button" class="deal">카드로 결정</button></div>
+          <p class="status" role="status" aria-live="polite" aria-atomic="true">고민은 잠깐, 높은 카드가 고릅니다. 2 &lt; … &lt; J &lt; Q &lt; K &lt; A</p>
+        </div>`;
+      const sides = [...shadow.querySelectorAll('.side')];
+      const choices = [...shadow.querySelectorAll('.choice')];
+      const dealButton = shadow.querySelector('.deal');
+      const status = shadow.querySelector('.status');
+      const mode = shadow.querySelector('select');
+      let busy = false;
+      const reset = () => {
+        sides.forEach((side) => {
+          delete side.dataset.winner;
+          side.querySelector('.card').removeAttribute('data-red');
+          side.querySelectorAll('.rank').forEach((rank) => { rank.textContent = '?'; });
+        });
+        choices.forEach((button) => button.setAttribute('aria-pressed', 'false'));
+      };
+      mode.addEventListener('change', () => {
+        const labels = mode.value === 'volume' ? ['볼륨 올리기', '볼륨 내리기'] : ['좋아요', '싫어요'];
+        choices.forEach((button, index) => { button.textContent = labels[index]; });
+        reset(); status.textContent = '어느 쪽이든 누르면 양쪽 카드를 뽑습니다.';
+      });
+      const showCard = (side, rank, suit) => {
+        side.querySelectorAll('.rank').forEach((element) => { element.textContent = ranks[rank]; });
+        side.querySelector('.suit').textContent = suits[suit];
+        side.querySelector('.card').dataset.red = String(suit === 1 || suit === 3);
+      };
+      const decide = async () => {
+        if (busy) return;
+        busy = true; reset();
+        [...choices, dealButton, mode].forEach((control) => { control.disabled = true; });
+        status.textContent = '카드를 뽑고 있습니다…';
+        try {
+          const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+          if (!reduced) {
+            for (let frame = 0; frame < 8; frame++) {
+              sides.forEach((side) => showCard(side, Math.floor(Math.random() * 13), Math.floor(Math.random() * 4)));
+              await new Promise((resolve) => setTimeout(resolve, 65 + frame * 12));
+            }
+          }
+          // Draw two different ranks: equivalent to redrawing a tie, without an unbounded loop.
+          const left = Math.floor(Math.random() * 13);
+          const other = Math.floor(Math.random() * 12);
+          const right = other >= left ? other + 1 : other;
+          showCard(sides[0], left, Math.floor(Math.random() * 4));
+          showCard(sides[1], right, Math.floor(Math.random() * 4));
+          const winner = left > right ? 0 : 1;
+          sides.forEach((side, index) => { side.dataset.winner = String(index === winner); });
+          choices[winner].setAttribute('aria-pressed', 'true');
+          const choice = choices[winner].textContent;
+          status.textContent = `${ranks[left]} vs ${ranks[right]} — ${choice} 선택!`;
+          dealButton.textContent = '다시 뽑기';
+          this.dispatchEvent(new CustomEvent('card-duel-choice', { detail: { choice, winner, ranks: [ranks[left], ranks[right]], mode: mode.value }, bubbles: true, composed: true }));
+        } finally {
+          busy = false;
+          [...choices, dealButton, mode].forEach((control) => { control.disabled = false; });
+        }
+      };
+      [...choices, dealButton].forEach((button) => button.addEventListener('click', decide));
+    }
+  }
+  customElements.define('card-duel', CardDuel);
+})();
+</script>
