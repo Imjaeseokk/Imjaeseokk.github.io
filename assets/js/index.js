@@ -45,3 +45,37 @@ const updateClock = () => {
 };
 updateClock();
 setInterval(updateClock, 60000);
+
+// Keep code and colors selectable when clipboard permission is unavailable.
+const copyReference = async (button, value) => {
+  const originalLabel = button.dataset.copyLabel || button.textContent;
+  button.dataset.copyLabel = originalLabel;
+  try {
+    await navigator.clipboard.writeText(value);
+    button.textContent = 'Copied!';
+  } catch {
+    button.textContent = 'Copy failed — select manually';
+  }
+  clearTimeout(button.copyFeedbackTimer);
+  button.copyFeedbackTimer = setTimeout(() => { button.textContent = originalLabel; }, 2200);
+};
+
+document.querySelectorAll('.library-content pre').forEach((pre) => {
+  const code = pre.querySelector('code');
+  const wrapper = document.createElement('div');
+  wrapper.className = 'code-copy-block';
+  pre.before(wrapper);
+  wrapper.append(pre);
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'copy-button';
+  button.textContent = 'Copy code';
+  button.setAttribute('aria-live', 'polite');
+  button.addEventListener('click', () => copyReference(button, (code || pre).textContent));
+  wrapper.append(button);
+});
+
+document.querySelectorAll('[data-copy-value]').forEach((button) => {
+  button.setAttribute('aria-live', 'polite');
+  button.addEventListener('click', () => copyReference(button, button.dataset.copyValue));
+});
