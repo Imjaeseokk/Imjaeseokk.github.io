@@ -23,7 +23,8 @@ code.prose-word { font-family:var(--font-sans); font-size:1em; }
 
 
 .site-header { position:fixed; z-index:20; top:0; right:0; left:0; height:72px; padding:0 var(--pad); display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line); background:color-mix(in srgb,var(--bg) 92%,transparent); backdrop-filter:blur(10px); }
-.brand { display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; }
+.brand { display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; color:var(--muted); transition:color .15s; }
+.brand:hover,.brand:focus-visible { color:var(--text); }
 .brand:focus-visible { outline:1px solid var(--text); outline-offset:4px; }
 .site-nav { display:flex; align-items:center; gap:28px; font-size:10px; text-transform:uppercase; letter-spacing:.1em; }
 .site-nav a { color:var(--muted); }
