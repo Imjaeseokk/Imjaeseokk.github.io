@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<section class="page-intro shell reveal">
+  <p class="eyebrow"><a href="{{ '/library/' | relative_url }}">Library</a> / {{ page.title }}</p>
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.description }}</p>
+</section>
+<section class="shell notes-index reveal">
+  {% assign entries = site.library | where: 'category', page.category | where_exp: 'entry', 'entry.published != false' | sort: 'title' %}
+  {% if entries.size > 0 %}
+    {% for entry in entries %}
+    <a class="note-row" href="{{ entry.url | relative_url }}">
+      <div class="note-meta"><span>{{ entry.system | default: page.title }}</span></div>
+      <div><h3>{{ entry.title }}</h3><p>{{ entry.description | escape }}</p></div><span>↗</span>
+    </a>
+    {% endfor %}
+  {% else %}
+    <div class="empty-state"><p>No references yet.</p><span>{{ page.description }}</span></div>
+  {% endif %}
+</section>

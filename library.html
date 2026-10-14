@@ -1,0 +1,17 @@
+---
+title: Library
+permalink: /library/
+description: Personal references for fonts, colors, UI components, and system commands.
+---
+<section class="page-intro shell reveal">
+  <p class="eyebrow">Library</p>
+  <h1>Useful references,<br>ready to reuse.</h1>
+  <p>Fonts, colors, interface components, and commands I return to.</p>
+</section>
+<section class="shell compact-list reveal">
+  {% for category in site.data.library_categories %}
+  <a class="compact-row" href="{{ '/library/' | append: category.slug | append: '/' | relative_url }}">
+    <span>0{{ forloop.index }}</span><div><h3>{{ category.name }}</h3><p>{{ category.description }}</p></div><small>Browse references</small><b>↗</b>
+  </a>
+  {% endfor %}
+</section>

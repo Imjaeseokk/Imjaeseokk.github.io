@@ -7,14 +7,15 @@
     <span class="sr-only">Toggle navigation</span><span></span><span></span>
   </button>
   <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-    <a href="{{ '/' | relative_url }}">Index</a>
+    <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a>
     <a href="{{ '/work/' | relative_url }}"{% if page.url contains '/work' %} aria-current="page"{% endif %}>Work</a>
     <a href="{{ '/notes/' | relative_url }}"{% if page.url contains '/notes' %} aria-current="page"{% endif %}>Notes</a>
+    <a href="{{ '/library/' | relative_url }}"{% if page.url contains '/library' %} aria-current="page"{% endif %}>Library</a>
     <a href="{{ '/readlog/' | relative_url }}"{% if page.url contains '/readlog' %} aria-current="page"{% endif %}>Readlog</a>
     <button class="theme-toggle" type="button" aria-label="Toggle color theme">◐</button>
   </nav>
 </header>
 <aside class="side-rail" aria-hidden="true">
   <span>JH</span>
-  <span>ENGINEER · STUDENT · BUILDER</span>
+  <span>ENGINEER · BUILDER</span>
 </aside>

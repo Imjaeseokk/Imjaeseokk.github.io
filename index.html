@@ -1,20 +1,21 @@
 ---
 title: Jaeseok Heo
-description: CVD engineer, systems engineering student, and builder working with semiconductor equipment, data, and computer vision.
+description: MLOps engineer at Samsung Electronics and Ajou University graduate working with semiconductor systems, data, and computer vision.
 ---
 {% assign profile = site.data.profile %}
 <section class="home-intro">
   <div class="intro-copy">
-    <p class="kicker">ENGINEER · STUDENT · BUILDER</p>
+    <p class="kicker">ENGINEER · BUILDER</p>
     <h1>Building useful<br>systems with<br>hardware & data.</h1>
     <p class="intro-deck">{{ profile.about }}</p>
   </div>
   <div class="intro-facts">
     <div><small>CURRENTLY</small><p>{{ profile.role }}</p></div>
-    <div><small>STUDYING</small><p>{{ profile.study }}</p></div>
-    <div><small>BASED IN</small><p>{{ profile.location }}</p></div>
+    <div><small>EDUCATION</small><p>{{ profile.education }}<br>{{ profile.graduation }}</p></div>
   </div>
 </section>
+
+
 
 <section class="index-section">
   <header class="index-heading"><div><span>01</span><h2>Selected Work</h2></div><p>Projects connecting perception, data, and physical systems.</p></header>
@@ -46,5 +47,16 @@ description: CVD engineer, systems engineering student, and builder working with
   <div class="compact-list">
     {% assign notes = site.notes | where_exp: 'note', 'note.published != false' | sort: 'date' | reverse %}
     {% if notes.size > 0 %}{% for note in notes limit:4 %}{% include note-row.html note=note %}{% endfor %}{% else %}<div class="empty-state"><p>Notes are being prepared.</p><span>Writing on engineering, data, and learning will live here.</span></div>{% endif %}
+  </div>
+</section>
+
+<section class="index-section">
+  <header class="index-heading"><div><span>04</span><h2>Library</h2></div><p>Personal references ready to reuse.</p></header>
+  <div class="compact-list">
+    {% for category in site.data.library_categories %}
+      <a class="compact-row" href="{{ '/library/' | append: category.slug | append: '/' | relative_url }}">
+        <span>0{{ forloop.index }}</span><div><h3>{{ category.name }}</h3><p>{{ category.description }}</p></div><small>Browse references</small><b>↗</b>
+      </a>
+    {% endfor %}
   </div>
 </section>

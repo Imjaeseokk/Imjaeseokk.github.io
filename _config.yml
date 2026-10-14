@@ -1,6 +1,6 @@
 title: "Jaeseok Heo — Engineer & Builder"
 name: Jaeseok Heo
-description: "CVD engineer working at the intersection of semiconductor equipment, data, and computer vision."
+description: "MLOps engineer at Samsung Electronics working with semiconductor systems, data, and computer vision."
 url: "https://imjaeseokk.github.io"
 baseurl: ""
 lang: en
@@ -10,6 +10,9 @@ github_username: Imjaeseokk
 linkedin_username: jaeseok-heo-8379ab237
 
 collections:
+  library:
+    output: true
+    permalink: /library/:name/
   notes:
     output: true
     permalink: /notes/:name/
@@ -18,6 +21,11 @@ collections:
     permalink: /readlog/:name/
 
 defaults:
+  - scope:
+      path: ""
+      type: library
+    values:
+      layout: post
   - scope:
       path: ""
     values:

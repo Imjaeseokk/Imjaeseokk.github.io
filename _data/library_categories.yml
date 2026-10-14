@@ -1,0 +1,12 @@
+- name: Fonts
+  slug: fonts
+  description: Font previews, usage notes, and licensing references.
+- name: Colors
+  slug: colors
+  description: Colors, palettes, and combinations for everyday use.
+- name: UI Components
+  slug: ui-components
+  description: Reusable interface elements with examples and code.
+- name: Commands
+  slug: commands
+  description: Command references for Git, tmux, Linux, CMD, and PowerShell.

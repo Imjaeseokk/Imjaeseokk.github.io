@@ -10,6 +10,7 @@ The site uses Jekyll only for layouts, data, and Markdown collections. The inter
 - Projects: `_data/projects.yml`
 - Experience and education: `_data/experience.yml`, `_data/education.yml`
 - Notes: `_notes/*.md`
+- Library: `_library/*.md` with `category` set to `fonts`, `colors`, `ui-components`, or `commands`. Command entries can also specify `system` (Git, tmux, Linux, CMD, or PowerShell).
 - Readlog: `_readlog/*.md` (`media_type` identifies 책, 유튜브, 칼럼, 아티클, 뉴스, etc.)
 
 Readlog entries use front matter like this:
@@ -25,6 +26,18 @@ published: true
 ```
 
 Recommended `media_type` values are `책`, `유튜브`, `칼럼`, `아티클`, `뉴스`, and `팟캐스트`.
+
+Library entries use front matter like this (create `_library` when adding the first reference):
+
+```yaml
+---
+title: "tmux session commands"
+category: commands
+system: tmux
+description: "Creating, attaching to, and closing sessions."
+published: true
+---
+```
 
 ## Local development
 
