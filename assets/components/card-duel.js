@@ -12,7 +12,7 @@ class CardDuel extends HTMLElement {
     if (this.shadowRoot) return;
     const volume = this.getAttribute('mode') !== 'reaction';
     const initial = volume ? 'Volume' : 'Like / Dislike';
-    const labels = volume ? ['Up', 'Down'] : ['좋아요', '싫어요'];
+    const labels = volume ? ['Up', 'Down'] : ['Like', 'Dislike'];
     const shadow = this.attachShadow({ mode: 'open' });
     shadow.innerHTML = `
       <style>
