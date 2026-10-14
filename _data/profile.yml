@@ -1,4 +1,4 @@
-eyebrow: Engineer / Builder
+eyebrow: Engineer / Builder / Student
 statement: I build systems at the intersection of semiconductor equipment, data, and computer vision.
 role: MLOps Engineer at Samsung Electronics
 education: Ajou University · BSc
@@ -7,11 +7,11 @@ location: South Korea
 portrait: /images/jaeseokk.jpg
 about:
   ko: >-
-    삼성전자에서 MLOps를 합니다. 더 효율적이고 합리적인 방법을 찾으며,
-    흥미롭고 유용한 웹 프로젝트를 만들고 UI/UX와 디자인을 배웁니다.
+    MLOps를 합니다. 더 효율적이고 합리적인 방법을 찾습니다.
+    흥미로운 것을 배우고, 유용한 것을 만듭니다.
   en: >-
-    I work on MLOps at Samsung Electronics. I look for more efficient, thoughtful ways
-    to do things, build interesting and useful web projects, and explore UI/UX and design.
+    I work as an MLOps Engineer at Samsung Electronics. I pursue efficient and rational
+    approaches to problem-solving, explore new areas of interest, and develop practical solutions.
 interests:
   - Semiconductor equipment
   - Computer vision

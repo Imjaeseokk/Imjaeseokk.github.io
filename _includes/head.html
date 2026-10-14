@@ -3,6 +3,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f3f0e8">
   <script>
+    try {
+      const savedLanguage = localStorage.getItem('language');
+      document.documentElement.dataset.uiLang = savedLanguage === 'en' ? 'en' : 'ko';
+    } catch { document.documentElement.dataset.uiLang = 'ko'; }
     document.documentElement.dataset.theme = localStorage.getItem('theme') ||
       (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   </script>

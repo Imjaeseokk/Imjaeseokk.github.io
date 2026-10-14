@@ -7,7 +7,7 @@ The site uses Jekyll only for layouts, data, and Markdown collections. The inter
 ## Content
 
 - Profile: `_data/profile.yml`
-- Home introduction: `_data/profile.yml` → `about.ko` / `about.en`. Home currently uses `lang: ko`; the language switcher is not implemented yet.
+- Home introduction: `_data/profile.yml` → `about.ko` / `about.en`. The SVG language button switches the introduction and interface copy between Korean (default) and English, saving the preference in local storage. Interface translations are in `assets/js/index.js`; authored post bodies and project records are not automatically translated. The icon shows the destination language: A for English and ㄱ for Korean.
 - Projects: `_data/projects.yml`
 - Experience and education: `_data/experience.yml`, `_data/education.yml`
 - Work contains Experience, Education, Projects, and Certificates (`_data/credentials.yml`). Home keeps project previews.
