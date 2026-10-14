@@ -1,7 +1,7 @@
 ---
 ---
 
-:root { --bg:#f7f7f5; --text:#151515; --muted:#777; --line:#deded9; --soft:#ededeb; --pad:24px; }
+:root { --bg:#f7f7f5; --text:#151515; --muted:#777; --line:#deded9; --soft:#ededeb; --pad:55px; }
 html[data-theme="dark"] { --bg:#141414; --text:#ededeb; --muted:#999; --line:#353535; --soft:#222; }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
@@ -39,7 +39,7 @@ main { padding-top:72px; }
 .index-heading h2 { margin:0; font-size:clamp(31px,4vw,58px); font-weight:500; letter-spacing:-.045em; }
 .index-heading > p { max-width:360px; margin:0; color:var(--muted); font-size:13px; }
 .compact-list { border-top:1px solid var(--line); }
-.shell.compact-list { margin-inline:var(--pad); margin-bottom:100px; }
+.shell.compact-list { margin:0; padding:0 var(--pad) 100px; border-top:0; }
 .compact-row,.note-row { min-height:104px; padding:22px 0; display:grid; grid-template-columns:46px 1.2fr 1fr 24px; gap:20px; align-items:center; border-bottom:1px solid var(--line); transition:padding .2s,background .2s; }
 .compact-row:hover,.note-row:hover { padding-inline:12px; background:var(--soft); }
 .compact-row > span,.note-row time { color:var(--muted); font-size:10px; }
@@ -115,12 +115,11 @@ main { padding-top:72px; }
 .reveal { opacity:1; transform:none; }
 
 @media(max-width:760px){
-  :root { --pad:22px; }
   .site-header { left:0; height:62px; }
   main { padding-top:62px; }
   .menu-toggle { width:34px; height:34px; padding:7px; display:flex; flex-direction:column; justify-content:center; gap:6px; border:0; background:none; }
   .menu-toggle span:not(.sr-only) { height:1px; display:block; background:currentColor; }
-  .site-nav { position:fixed; inset:62px 0 auto; padding:26px 22px; display:none; flex-direction:column; align-items:flex-start; gap:20px; background:var(--bg); border-bottom:1px solid var(--line); font-size:13px; }
+  .site-nav { position:fixed; inset:62px 0 auto; padding:26px var(--pad); display:none; flex-direction:column; align-items:flex-start; gap:20px; background:var(--bg); border-bottom:1px solid var(--line); font-size:13px; }
   .site-nav.is-open { display:flex; }
   .home-intro { min-height:auto; padding-top:70px; grid-template-columns:1fr; gap:70px; }
   .intro-copy h1 { font-size:clamp(43px,13vw,68px); }
