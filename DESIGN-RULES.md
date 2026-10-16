@@ -16,7 +16,7 @@
 | 항목 제목 | 목록·경력 제목·본문 h3는 데스크톱 20px·모바일 18px | `--item-size` |
 | 보조 정보 | 메뉴·날짜·번호·분류 라벨 12px, 설명·푸터·표 14px. 날짜·번호만 고정폭, 라벨·설명은 본문 글꼴 | `--meta-size`, `--support-size` |
 | 읽는 폭 | Notes·Readlog 본문과 글 헤더·구분선은 최대 760px. 왼쪽 정렬 유지 | `--reading-width`, `.post`, `.prose` |
-| Library 폭 | 설명·문단·제목은 읽는 폭 유지. 분류 페이지의 데모·표·코드는 사용 가능한 폭을 사용 | `.reference-description`, `.reference-card .prose` |
+| Library 폭 | 설명·문단·제목·미리보기는 최대 760px로 왼쪽 정렬. 분류 페이지의 표·코드는 사용 가능한 폭을 사용 | `.reference-description`, `.reference-preview`, `.reference-card .prose` |
 | 글 시작 여백 | 데스크톱 위 패딩 56px·헤더 위 32px, 모바일 32px·24px | `.post`, `.post-header` |
 | 여백과 구분선 | 데스크톱 콘텐츠 좌우 여백은 55px. 모바일은 화면 폭에 따라 20–38px. 큰 섹션 구분선은 화면 전체 폭 | `--pad`, 각 섹션의 테두리 |
 | 줄바꿈 | 전체 `word-break: keep-all`. 코드는 원래 줄을 유지하고 블록 안에서 가로 스크롤. 긴 URL과 인라인 코드만 넘침 방지 예외 | `html`, `pre`, `.prose a` |

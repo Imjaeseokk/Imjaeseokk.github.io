@@ -111,11 +111,10 @@ small { font-size:var(--support-size); }
 .reference-card { padding:32px 0; border-bottom:1px solid var(--line); min-width:0; }
 .reference-card h2 { margin:0 0 10px; font-size:var(--section-size); line-height:var(--section-leading); letter-spacing:var(--section-tracking); font-weight:700; }
 .reference-description { max-width:var(--reading-width); color:var(--muted); font-size:var(--support-size); }
-.reference-preview { margin:24px 0; padding:24px; border:1px solid var(--line); overflow:auto; }
-/* Library text keeps the reading measure; examples may use the available width. */
+.reference-preview { max-width:var(--reading-width); margin:24px 0; padding:24px; border:1px solid var(--line); overflow:auto; }
+/* Library text and previews share a measure; code and tables may use the available width. */
 .reference-card .prose { max-width:none; }
 .reference-card .prose > :not(.reference-preview):not(.code-copy-block):not(.highlight):not(pre):not(table) { max-width:var(--reading-width); }
-.reference-card .prose > .reference-preview { max-width:100%; }
 .code-copy-block { position:relative; margin:24px 0; }
 .code-copy-block pre { margin:0; padding:18px 64px 18px 18px; min-height:64px; overflow:auto; background:var(--soft); font-size:var(--code-size); line-height:1.6; border-radius:7px; }
 .copy-button { min-height:var(--tap-size); padding:7px 12px; border:1px solid var(--line); background:var(--bg); cursor:pointer; font-size:var(--support-size); }
