@@ -18,7 +18,7 @@ class CardDuel extends HTMLElement {
       <style>
         :host { display:inline-block; vertical-align:middle; }
         * { box-sizing:border-box; }
-        button { position:relative; display:inline-flex; align-items:center; justify-content:center; width:132px; height:38px; padding:0 14px; border:1px solid var(--line,#deded9); border-radius:7px; background:var(--bg,#fff); color:var(--text,#171717); font:500 14px/1 "Geist Variable","Pretendard Variable",sans-serif; cursor:pointer; box-shadow:0 1px 2px #00000006; transition:background .15s; }
+        button { position:relative; display:inline-flex; align-items:center; justify-content:center; width:132px; height:var(--tap-size,44px); padding:0 14px; border:1px solid var(--line,#deded9); border-radius:7px; background:var(--bg,#fff); color:var(--text,#171717); font:500 14px/1 "Geist Variable","Pretendard Variable",sans-serif; cursor:pointer; box-shadow:0 1px 2px #00000006; transition:background .15s; }
         button:hover:not(:disabled) { background:var(--soft,#f4f4f4); }
         button:focus-visible { outline:2px solid currentColor; outline-offset:4px; }
         button:disabled { cursor:wait; }
@@ -26,7 +26,7 @@ class CardDuel extends HTMLElement {
         .cards { display:none; position:absolute; inset:0; grid-template-columns:1fr 1fr; overflow:hidden; border-radius:6px; }
         .cell { display:block; position:relative; overflow:hidden; font-size:17px; font-weight:400; }
         .reel { display:block; will-change:transform; }
-        .face { height:var(--reel-height,36px); display:flex; align-items:center; justify-content:center; gap:5px; }
+        .face { height:var(--reel-height,42px); display:flex; align-items:center; justify-content:center; gap:5px; }
         .rank { font-family:var(--font-mono,"Monoplex KR",monospace); }
         .cell + .cell { border-left:1px solid var(--line,#ddd); }
         .suit { font-size:12px; } .red { color:#c44444; }

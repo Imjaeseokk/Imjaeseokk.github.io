@@ -5,6 +5,15 @@ layout: default
   {% assign archive_url = '/readlog/' %}
   {% assign archive_label = 'All readlog entries' %}
   {% assign default_category = page.media_type | default: 'Readlog' %}
+{% elsif page.collection == 'library' %}
+  {% assign library_category = site.data.library_categories | where: 'slug', page.category | first %}
+  {% assign archive_url = '/library/' %}
+  {% assign archive_label = 'All library entries' %}
+  {% if library_category %}
+    {% assign archive_url = '/library/' | append: library_category.slug | append: '/' %}
+    {% assign archive_label = library_category.name %}
+  {% endif %}
+  {% assign default_category = 'Library' %}
 {% else %}
   {% assign archive_url = '/notes/' %}
   {% assign archive_label = 'All notes' %}
